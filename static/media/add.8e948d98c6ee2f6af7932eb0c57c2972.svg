@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF9600" offset="0%"></stop>
+            <stop stop-color="#FE5D00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="18_Dashboard-" transform="translate(-1258.000000, -101.000000)">
+            <g id="Group-3" transform="translate(1258.000000, 101.000000)">
+                <circle id="Oval" fill="url(#linearGradient-1)" cx="18" cy="18" r="18"></circle>
+                <g id="add" transform="translate(12.000000, 12.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M10.625,4.79166667 L7.08333333,4.79166667 C6.96828206,4.79166667 6.875,4.69838461 6.875,4.58333333 L6.875,1.04166667 C6.875,0.466410312 6.40858969,0 5.83333333,0 C5.25807698,0 4.79166667,0.466410312 4.79166667,1.04166667 L4.79166667,4.58333333 C4.79166667,4.69838461 4.69838461,4.79166667 4.58333333,4.79166667 L1.04166667,4.79166667 C0.466410312,4.79166667 0,5.25807698 0,5.83333333 C0,6.40858969 0.466410312,6.875 1.04166667,6.875 L4.58333333,6.875 C4.69838461,6.875 4.79166667,6.96828206 4.79166667,7.08333333 L4.79166667,10.625 C4.79166667,11.2002564 5.25807698,11.6666667 5.83333333,11.6666667 C6.40858969,11.6666667 6.875,11.2002564 6.875,10.625 L6.875,7.08333333 C6.875,6.96828206 6.96828206,6.875 7.08333333,6.875 L10.625,6.875 C11.2002564,6.875 11.6666667,6.40858969 11.6666667,5.83333333 C11.6666667,5.25807698 11.2002564,4.79166667 10.625,4.79166667 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

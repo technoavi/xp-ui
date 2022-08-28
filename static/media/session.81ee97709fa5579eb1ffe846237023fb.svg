@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="12px" viewBox="0 0 13 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="19_Dashboard-" transform="translate(-1007.000000, -363.000000)" fill="#9D9D9D" fill-rule="nonzero">
+            <g id="icon" transform="translate(1007.000000, 363.000000)">
+                <polygon id="Path" points="0 3.60019836 6.3 0 12.6 3.60019836 6.3 7.2"></polygon>
+                <polygon id="Path" points="0 5.44534005 0.739534884 4.81293031 6.3 7.83588021 11.8503876 4.8 12.6 5.44534005 6.3 9"></polygon>
+                <polygon id="Path" points="0 7.84600317 0.739534884 7.21331965 6.3 10.2360974 11.8503876 7.2 12.6 7.84600317 6.3 11.4"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
