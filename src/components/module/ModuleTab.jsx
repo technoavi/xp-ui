@@ -13,14 +13,30 @@ import banner from "../../assets/banner_course.png";
 import Module from "../../assets/modules.svg";
 import Session from "../../assets/session.svg";
 import Hours from "../../assets/hours.svg";
+import { Redirect, Link } from "react-router-dom";
 
 export default class ModuleTab extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      islogout: false
+    };
+  }
+  signOut = () => {
+    localStorage.removeItem("teach");
+    this.setState({
+      islogout: true
+    });
+  };
   render() {
+    if (this.state.islogout) {
+      return <Redirect to="/login" />;
+    }
     const courseData = {
-      modules: 4,
-      session: 41,
-      hours: 67,
-      course: "Data Science Engineering",
+      modules: 42,
+      session: 43,
+      hours: 33,
+      course: "Data Science Engineeringsdfsdfsdfs",
       faculty: "Avinash Srivastava",
     };
     return (
@@ -78,6 +94,11 @@ export default class ModuleTab extends Component {
               </div>
             </div>
             {/* end */}
+            <div style={{display: "flex",
+    justifyContent: "left",
+    marginTop: "6px"}}><button onClick={this.signOut} href="#" style={{width:" 70px", height:"30px"}}>
+              Sign Out
+            </button></div>
           </div>
         </div>
      <div style={{backgroundColor: 'white',textAlign: 'left', marginLeft: '125px'}}>

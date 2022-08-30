@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Router, Route, Switch,Redirect } from "react-router-dom";
-import { Course } from "./components/course/Course";
+import  Course  from "./components/course/Course";
 import ModuleTab from "./components/module/ModuleTab";
 import SignUp from "./components/login/SignUp";
 import './App.css';

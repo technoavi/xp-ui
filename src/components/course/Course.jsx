@@ -1,20 +1,47 @@
 import "./course.css";
 import "./ResponsiveBlog.css";
+import { Redirect, Switch, Route, Link } from "react-router-dom";
 import { PostCourse } from "./postcourse/PostCourse";
-
+import React, { Component, useState } from "react";
 import BlogPic1 from "../../assets/blog_image_1.svg";
 import BlogPic2 from "../../assets/bloco_image_2.svg";
 import BlogPic3 from "../../assets/bloco_image_3.svg";
 // import BlogPic4 from "../../../assets/bloco_image_4.svg";
 import ProfilePic from "../../assets/profile.jpg";
-import { Link } from "react-router-dom";
 
-export const Course = () => {
+export default class Course extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      islogout: false
+    };
+  }
+  signOut = () => {
+    localStorage.removeItem("teach");
+    this.setState({
+      islogout: true
+    });
+  };
+  render() {
+    if (this.state.islogout) {
+      return <Redirect to="/login" />;
+    }
+
  
   return (
     <section className="blog">
+      
       <div className="blogWrapper">
+        
         <div className="topInfo" style={{marginTop:"5em"}}>
+        <div style={{display: "flex",
+    justifyContent: "right",
+    marginTop: "6px"}}>
+      {/* <button onClick={this.signOut} href="#" style={{width:" 70px", height:"30px"}}>
+              Sign Out
+            </button> */}
+            </div>
           <h2>Welcome to Qurio Class</h2>
           <h3>Where teaching and learning come together</h3>
           <p>
@@ -63,3 +90,4 @@ export const Course = () => {
     </section>
   );
 };
+}

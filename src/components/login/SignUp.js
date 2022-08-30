@@ -5,7 +5,7 @@ import { Modal } from 'react-bootstrap';
 import Button from "@material-ui/core/Button";
 
 import Form from 'react-bootstrap/Form'
-
+import { Redirect } from "react-router-dom";
 import "./signup.css";
 import TextField from '@material-ui/core/TextField';
 import Dialog from '@material-ui/core/Dialog';
@@ -22,6 +22,8 @@ import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import IconButton from "@material-ui/core/IconButton";
 import UserIcon from "../../assets/user.svg";
 import Snackbar from '@material-ui/core/Snackbar';
+
+
 
 export default class SignUp extends Component {
 
@@ -43,14 +45,17 @@ export default class SignUp extends Component {
       horizontal: 'right',
       popMessage: '',
       userName: '',
-      userNameError: false
+      userNameError: false,
+      errorMessages:{},
+      isSubmitted:false
     };
     this.handleChange = this.handleChange.bind(this);
     this.loginClicked = this.loginClicked.bind(this);
     this.handleUserName = this.handleUserName.bind(this);
     this.handleCloseModel = this.handleCloseModel.bind(this);
+   
   }
-  
+ 
   handleClickShowPassword = () => {
     this.setState({ showPassword: !this.state.showPassword });
   };
@@ -68,18 +73,23 @@ export default class SignUp extends Component {
   }
   handleChange(event) {
     if (event.target.name === "username") {
+      
       const isError = (event.target.value !== '') ? false : true;
       this.setState({
         username: event.target.value,
         usernameError: isError
       });
+
     } else if (event.target.name === "password") {
+   
       const isError = (event.target.value !== '') ? false : true;
       this.setState({
         password: event.target.value,
         passwordError: isError
       });
+      
     } else if (event.target.name === 'uname') {
+      console.log("un : "+event.target.name.value)
       const isError = (event.target.value !== '') ? false : true;
       this.setState({
         userName: event.target.value,
@@ -90,16 +100,31 @@ export default class SignUp extends Component {
 
 
   loginClicked(event) {
-    event.preventDefault();
+    
     if (this.state.username === '' && this.state.password === '') {
       this.setState({
         usernameError: true,
         passwordError: true
       });
-    } else {
+    } 
+    else if ((this.state.username  === "admin" && this.state.password === "123")) {
+      
+      localStorage.setItem("teach", "T");
+      this.setState({
+        islogged: true
+      });
+    }
+   else if ((this.state.username  === "user" && this.state.password === "123")) {
+
+      localStorage.setItem("stu", "S");
+      this.setState({
+        islogged: true
+      });
+    }
+    else {
       console.log("API integration required", this.state.username, this.state.password)
     }
-
+    event.preventDefault();
   }
 
   handleUserName(event){
@@ -124,7 +149,12 @@ export default class SignUp extends Component {
 
 
   render() {
-
+    if (localStorage.getItem("teach")) {
+      return <Redirect to="/tc" />;
+    }
+    else if (localStorage.getItem("stu")) {
+      return <Redirect to="/st" />;
+    }
     return (
 
 
@@ -312,11 +342,9 @@ export default class SignUp extends Component {
           open={this.state.popShow}
           onClose={this.handleCloseModel}
           message={this.state.popMessage}
-          autoHideDuration={5000}
-
-        >
+          autoHideDuration={5000}  />
           
-        </Snackbar>
+      
 
       </div>
 

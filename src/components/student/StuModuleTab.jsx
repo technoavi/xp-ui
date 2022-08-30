@@ -1,4 +1,5 @@
 import React, { Component, useState } from "react";
+import { Redirect, Link } from "react-router-dom";
 import { Container } from "@material-ui/core";
 import "./../College.css";
 import Image from "react-bootstrap/Image";
@@ -16,7 +17,22 @@ import StuAnnouncementTab from "./StuAnnouncementTab";
 import banner from "../../assets/banner_course.png";
 
 export default class StuModuleTab extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      islogout: false
+    };
+  }
+  signOut = () => {
+    localStorage.removeItem("stu");
+    this.setState({
+      islogout: true
+    });
+  };
   render() {
+    if (this.state.islogout) {
+      return <Redirect to="/login" />;
+    }
     const courseData = {
       modules: 4,
       session: 41,
@@ -26,7 +42,9 @@ export default class StuModuleTab extends Component {
     };
     return (
       <div>
+      
         <div style={{ position: "relative", textAlign: "left" }}>
+        
           <Image
             src={banner}
             alt="banner"
@@ -37,6 +55,7 @@ export default class StuModuleTab extends Component {
               backgroundImage: "linear-gradient(to bottom, #626262, #001144)",
             }}
           />
+           
           <div id="text-over">
             <span style={{ fontFamily: "Poppins", fontSize: "32px" }}>
               {courseData.course}
@@ -78,10 +97,20 @@ export default class StuModuleTab extends Component {
                 <span id="crs-card-btm">{courseData.hours}</span>&nbsp;
                 <span id="crs-card-btm">Hours</span>
               </div>
+              
             </div>
+            
+            
             {/* end */}
+            <div style={{display: "flex",
+    justifyContent: "left",
+    marginTop: "6px"}}><button onClick={this.signOut} href="#" style={{width:" 70px", height:"30px"}}>
+              Sign Out
+            </button></div>
           </div>
+          
         </div>
+       
         <div
           style={{
             backgroundColor: "white",
