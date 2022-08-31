@@ -39,7 +39,7 @@ export default function VideoInput(props) {
           src={source}
         />
       )}
-      <div className="VideoInput_footer">{msg|| "Nothing selectd"}</div>
+      <div className="VideoInput_footer">{msg|| " Select a video file to upload"}</div>
     </div>
   );
 }

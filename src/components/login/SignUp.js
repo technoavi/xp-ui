@@ -3,7 +3,7 @@ import lock from "../../assets/lock_sm.svg";
 import user_sm from "../../assets/user_sm.png";
 import { Modal } from 'react-bootstrap';
 import Button from "@material-ui/core/Button";
-
+import logo from "../../assets/logo.png";
 import Form from 'react-bootstrap/Form'
 import { Redirect } from "react-router-dom";
 import "./signup.css";
@@ -30,7 +30,7 @@ export default class SignUp extends Component {
   constructor() {
     super();
     this.state = {
- 
+
       isOpen: false,
       redirect: false,
       username: "",
@@ -46,16 +46,16 @@ export default class SignUp extends Component {
       popMessage: '',
       userName: '',
       userNameError: false,
-      errorMessages:{},
-      isSubmitted:false
+      errorMessages: {},
+      isSubmitted: false
     };
     this.handleChange = this.handleChange.bind(this);
     this.loginClicked = this.loginClicked.bind(this);
     this.handleUserName = this.handleUserName.bind(this);
     this.handleCloseModel = this.handleCloseModel.bind(this);
-   
+
   }
- 
+
   handleClickShowPassword = () => {
     this.setState({ showPassword: !this.state.showPassword });
   };
@@ -73,7 +73,7 @@ export default class SignUp extends Component {
   }
   handleChange(event) {
     if (event.target.name === "username") {
-      
+
       const isError = (event.target.value !== '') ? false : true;
       this.setState({
         username: event.target.value,
@@ -81,15 +81,15 @@ export default class SignUp extends Component {
       });
 
     } else if (event.target.name === "password") {
-   
+
       const isError = (event.target.value !== '') ? false : true;
       this.setState({
         password: event.target.value,
         passwordError: isError
       });
-      
+
     } else if (event.target.name === 'uname') {
-      console.log("un : "+event.target.name.value)
+      console.log("un : " + event.target.name.value)
       const isError = (event.target.value !== '') ? false : true;
       this.setState({
         userName: event.target.value,
@@ -100,21 +100,21 @@ export default class SignUp extends Component {
 
 
   loginClicked(event) {
-    
+
     if (this.state.username === '' && this.state.password === '') {
       this.setState({
         usernameError: true,
         passwordError: true
       });
-    } 
-    else if ((this.state.username  === "admin" && this.state.password === "123")) {
-      
+    }
+    else if ((this.state.username === "admin" && this.state.password === "123")) {
+
       localStorage.setItem("teach", "T");
       this.setState({
         islogged: true
       });
     }
-   else if ((this.state.username  === "user" && this.state.password === "123")) {
+    else if ((this.state.username === "user" && this.state.password === "123")) {
 
       localStorage.setItem("stu", "S");
       this.setState({
@@ -127,16 +127,16 @@ export default class SignUp extends Component {
     event.preventDefault();
   }
 
-  handleUserName(event){
+  handleUserName(event) {
     console.log("username : ", this.state.userName);
     event.preventDefault();
 
     const isError = (this.state.userName !== '') ? false : true;
-    if(isError){
+    if (isError) {
       this.setState({
         userNameError: isError
       });
-      return ;
+      return;
     } else {
       this.setState({
         popShow: true,
@@ -163,7 +163,7 @@ export default class SignUp extends Component {
         <div className="row" style={{ marginTop: "120px" }}>
           <div
             className="col"
-            style={{ marginLeft:"200px", display: "grid" }}
+            style={{ marginLeft: "200px", display: "grid" }}
           >
             <div style={{ textAlign: "left" }}>
               <span id="phrase-txt">
@@ -186,7 +186,12 @@ export default class SignUp extends Component {
             </div>
           </div>
           <div className="col">
+            <div style={{ display:"flex",justifyContent:"right", marginTop: "-32em",  marginBottom: "-5em", marginRight:"7em" }}>
+               <img style={{
+                  width: "40%", 
+                }} src={logo} alt="logo" /></div>
             <div id="login-Rectangle">
+         
               <img
                 src={UserIcon}
                 alt="USER"
@@ -196,7 +201,7 @@ export default class SignUp extends Component {
               <span id="Welcome-back">Welcome back,</span>
               <br />
               <span id="Please-login-to-your" style={{ marginTop: "34px" }}>
-                Please login to your QURIO account.
+                Please login to your account.
               </span>
               <br />
               <form >
@@ -269,8 +274,8 @@ export default class SignUp extends Component {
                                   {this.state.showPassword ? (
                                     <Visibility />
                                   ) : (
-                                      <VisibilityOff />
-                                    )}
+                                    <VisibilityOff />
+                                  )}
                                 </IconButton>
                               </InputAdornment>
                             }
@@ -319,10 +324,10 @@ export default class SignUp extends Component {
                     <DialogActions>
                       <Button onClick={this.toggleModal} color="primary">
                         Cancel
-                    </Button>
+                      </Button>
                       <Button onClick={(e) => this.handleUserName(e)} color="primary">
                         Submit
-                    </Button>
+                      </Button>
                     </DialogActions>
                   </Dialog>
 
@@ -332,27 +337,28 @@ export default class SignUp extends Component {
                 <button id="Login-Btn" onClick={(e) => this.loginClicked(e)}>
                   <span id="LOG-IN">LOGIN</span>
                 </button>
-               
+
               </form>
-              <span id="Please-login-to-your" style={{ marginTop: "34px" }}>
-              Teacher => admin/123 && Student => user/123
+              <span id="Please-login-to-your" style={{ marginTop: "34px", color: "black" }}>
+              Teacher - > admin/123 && Student - > user/123
               </span>
             </div>
           </div>
-        
+
         </div>
 
         <Snackbar
-          anchorOrigin={{ "vertical": this.state.vertical, "horizontal": this.state.horizontal} }
+          anchorOrigin={{ "vertical": this.state.vertical, "horizontal": this.state.horizontal }}
           open={this.state.popShow}
           onClose={this.handleCloseModel}
           message={this.state.popMessage}
-          autoHideDuration={5000}  />
-          
-      
+          autoHideDuration={5000} />
+
+
 
       </div>
 
     );
   }
 }
+ 

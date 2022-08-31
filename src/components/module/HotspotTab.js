@@ -118,17 +118,15 @@ export default class HotspotTab extends Component {
       <div className="row" id="ses-div">
           <div className="row">
         <div className="col">
-          <span id="hd-colg-name">Pre watched Content</span>
+        <div className="onetag" >
+        <span >Current Time </span>
         </div>
-        <hr />
+        </div>
+     
       </div>
         <div className="row" >
           <div className="col-sm-3">
-            <div style={{ margin: "15px", width: "180px" }}>
-              <Image width={438} height={105} src={ai} alt="Card image cap" />
-              <br />
-              <span id="dash-lbl">By Mr Avinash Srivastava</span>
-            </div>
+           
           </div>
           <div
             className="col-sm-9"
@@ -139,36 +137,7 @@ export default class HotspotTab extends Component {
               width: "100%"
             }}
           >
-            <div>
-          
-              <span id="mod-title">Module 1</span>
-              <br />
-              <div>
-                {" "}
-                <span id="stu-name">
-                  Finance methods of 2020 and it Priciples to solve crisis.
-                </span>
-                <br />
-                <span id="cc-lbl">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit1.
-                </span>
-                <br />
-                <p id="dash-lbl" style={{ marginTop: "18px" }}>
-                  {" "}
-                  <u>4 Sessions</u>{" "}
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <div
-                    id="add-ses"
-                    style={{ float: "right", textAlign: "center" }}
-                  >
-                    <span id="all-o">Add new Session</span>
-                  
-                  </div>
-                </p>
-              </div>
-            </div>
+            
             <VideoInput width={100} height={250} />
           </div>
           <hr

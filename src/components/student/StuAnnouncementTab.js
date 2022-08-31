@@ -76,7 +76,9 @@ export default class StuAnnouncementsTab extends Component {
    
                   <div className="row">
     <div className="col">
-
+    <div className="onetag" style={{  marginTop: "12px" }}>
+        <span >Current Tab </span>
+        </div>
     </div>
     <div className="col">
     </div>

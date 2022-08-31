@@ -116,7 +116,9 @@ export default class StuSessionTab extends Component {
     });
     return (
       <div className="card-container">
-       
+          <div className="onetag" style={{  marginTop: "12px" }}>
+        <span >Current Tab </span>
+        </div>
         <div onClick={this.onOpenModal} className="row" style={{   display: "flex",
     flexWrap: "wrap"}}>
           {peopleCards}

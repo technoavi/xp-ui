@@ -12,8 +12,7 @@ export const PostCourse = (props) => {
             </div>
             <div className="botBlog">
                 <div className="botProfile">
-                <img src={props.profile} alt={props.name} />
-                <p>{props.author}</p>
+              
                 </div>
             </div>
         </div>

@@ -98,6 +98,9 @@ export default class StuAssessmentsTab extends Component {
     });
     return (
       <div>
+         <div className="onetag" style={{  marginTop: "12px" }}>
+        <span >Current Tab </span>
+        </div>
         <div className="row" style={{     display: "flex",
     flexWrap: "wrap"}}>
           {assessmentsCards}

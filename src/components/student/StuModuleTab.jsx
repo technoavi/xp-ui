@@ -37,8 +37,8 @@ export default class StuModuleTab extends Component {
       modules: 4,
       session: 41,
       hours: 67,
-      course: "Data Science Engineering",
-      faculty: "Avinash Srivastava",
+      course: "Namaste!!",
+      faculty: "Avinash",
     };
     return (
       <div>
@@ -57,54 +57,22 @@ export default class StuModuleTab extends Component {
           />
            
           <div id="text-over">
-            <span style={{ fontFamily: "Poppins", fontSize: "32px" }}>
+            <span style={{ fontFamily: "Poppins", fontSize: "20px" }}>
               {courseData.course}
             </span>
             <br />
 
-            <span style={{ fontFamily: "Poppins", fontSize: "20px" }}>
+            <span style={{ fontFamily: "Poppins", fontSize: "30px" }}>
               {courseData.faculty}
             </span>
             <br />
-            <div style={{ display: "flex", marginTop: "12px" }}>
-              <div style={{ marginRight: "12px" }}>
-                <Image
-                  src={Module}
-                  alt="Module"
-                  style={{ height: "16px", width: "16px", padding: "2PX" }}
-                />
-                &nbsp;
-                <span id="crs-card-btm">{courseData.modules}</span>&nbsp;
-                <span id="crs-card-btm">Modules</span>
-              </div>
-              <div style={{ marginRight: "12px" }}>
-                <Image
-                  src={Session}
-                  alt="Session"
-                  style={{ height: "16px", width: "16px", padding: "2PX" }}
-                />
-                &nbsp;
-                <span id="crs-card-btm">{courseData.session}</span>&nbsp;
-                <span id="crs-card-btm">Session</span>
-              </div>
-              <div style={{ marginRight: "12px" }}>
-                <Image
-                  src={Hours}
-                  alt="Hours"
-                  style={{ height: "16px", width: "16px", padding: "2PX" }}
-                />
-                &nbsp;
-                <span id="crs-card-btm">{courseData.hours}</span>&nbsp;
-                <span id="crs-card-btm">Hours</span>
-              </div>
-              
-            </div>
+           
             
             
             {/* end */}
             <div style={{display: "flex",
     justifyContent: "left",
-    marginTop: "6px"}}><button onClick={this.signOut} href="#" style={{width:" 70px", height:"30px"}}>
+    marginTop: "30px"}}><button onClick={this.signOut} href="#" style={{width:" 70px", height:"30px"}}>
               Sign Out
             </button></div>
           </div>

@@ -7,11 +7,27 @@
     box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.466);
     margin: 0 1.5rem;
     transition: all 0.3s;
+    text-decoration: none;
     
 }
+a:link {
+    text-decoration: none;
+}
 
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
 .PostBlog:hover {
-    transform: scale(1.05)
+    transform: scale(1.05);
+    text-decoration: none;
 }
 
 .middleBlog {
@@ -53,4 +69,9 @@
 .botProfile p {
     margin: 1rem;
     color: rgba(0, 0, 0, 0.37);
+}
+.img{
+
+    height: 350px;
+    width: 320px;
 }

@@ -28,8 +28,7 @@ export default class StuSessionCard extends Component {
           width: "300px",
           height: "205px",
           
-          marginRight: "12px",
-          marginBottom:'20px',
+         margin: "18px"
         }}
       >
         <Card style={{ width: "300px", height: "215px" }}>

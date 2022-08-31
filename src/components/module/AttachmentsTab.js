@@ -89,9 +89,11 @@ toggleModal = () => {
 		<div >
         <div className="row">
         <div className="col">
-          <span id="hd-colg-name">Pre watched Content</span>
+        <div className="onetag" style={{  marginTop: "12px" }}>
+        <span >Current Time </span>
         </div>
-        <hr />
+        </div>
+     
       </div>
     <div className="row">
     <div className="col">

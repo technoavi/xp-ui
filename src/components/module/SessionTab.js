@@ -24,44 +24,36 @@ export default class SessionTab extends Component {
       students: [
         {
           id: 1,
-          name: "Avinash Srivastava",
+          name: "Angular Defence Mechanism",
           img_url: "https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg",
           email_id: "dfgg@email.com",
-          department: "Module 1",
+          department: "Understand the science behind defence mechanism of animals",
           course_enrolled: "23.09",
         },
         {
           id: 2,
-          name: "Kuldeepsinh Chavda ",
+          name: "Buoyancy ",
           img_url: "https://farm6.staticflickr.com/5812/23394215774_b76cd33a87_h_d.jpg",
           email_id: "dfgg@email.com",
-          department: "Finance",
+          department: "See how buoyancy keeps a boat afloat",
           course_enrolled: "15.67",
         },
         {
           id: 3,
-          name: "Surs",
+          name: "Angular Momentum",
           img_url: "https://farm8.staticflickr.com/7455/27879053992_ef3f41c4a0_h_d.jpg",
           email_id: "dfgg@email.com",
-          department: "Mettalagy and Instrumentation",
+          department: "Thinking of flip? See this first",
           course_enrolled: "12.34",
         },
         {
           id: 4,
-          name: "Sursinh bhai ParmAR ",
+          name: "Velocity and Friction",
           img_url: "https://farm8.staticflickr.com/7367/27980898905_72d106e501_h_d.jpg",
           email_id: "dfgg@email.com",
-          department: "Biological Science",
+          department: "Ever fallen while skating? know why ",
           course_enrolled: "5.00",
-        },
-        {
-          id: 5,
-          name: "mITESH Sinh Parmar Rajput",
-          img_url: "https://farm8.staticflickr.com/7356/27980899895_9b6c394fec_h_d.jpg",
-          email_id: "ddddddddddddddfgg@email.com",
-          department: "CSE",
-          course_enrolled: "9.00",
-        },
+        }
     
       ],
     };
@@ -107,13 +99,11 @@ this.setState({
             </td>
             <td style={{verticalAlign:'top' ,width: "806px" }}>
               <div  style={{ width: "606px" ,marginLeft: '12px'}}>
-              <span id="mod-title">Session {id}</span><br/>
+              <span id="mod-title">Standard IX</span><br/>
                 <span id="stu-name">{name}</span>
                 <br />
                 <span id="cc-lbl">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit.
+                 {department}
                 </span>
               </div>
             </td>
@@ -145,12 +135,15 @@ this.setState({
       <div className="row" id="ses-div">
          <div className="row">
         <div className="col">
-          <span id="hd-colg-name">Pre watched Content</span>
+        <div className="onetag" >
+        <span >Current Time </span>
         </div>
-        <hr />
-      </div>
-        <div className="row">
+        </div>
        
+      </div>
+       
+        <div className="row">
+        {/*
           <div className="col-3">
             <div style={{ margin: "15px", width: "180px" }}>
               <Image width={438} height={105} src={ai} alt="Card image cap" />
@@ -189,15 +182,11 @@ this.setState({
               </div>
               
             </div>
-          </div>
+          </div> */}
         <div className="col" style={{ textAlign: 'center' }}>
-          <div >
-            
-                    <span id="all-o">Preloaded Content</span>
-     
-                  </div>
+          
         </div>
-          <hr style={{ marginBottom: "1rem", marginTop: "0.5rem", width:'95%'}} />
+        
 
         </div>
        

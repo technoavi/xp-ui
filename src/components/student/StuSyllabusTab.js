@@ -19,7 +19,11 @@ export default class StuSyllabusTab extends Component {
       <div style={{ textAlign: "left", marginTop: "12px" }}>
       <div className="row">
         <div className="col">
-          <span id="hd-colg-name">Current Time {dt.format("hh:mm a") }</span>
+   
+          <div className="onetag" style={{  marginTop: "12px" }}>
+        <span >Current Time {dt.format("hh:mm a") }</span>
+        </div>
+   
         </div>
       
         

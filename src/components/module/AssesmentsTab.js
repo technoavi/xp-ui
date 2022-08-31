@@ -1,5 +1,5 @@
-import assgn from "../../assets/Assignment_grey.svg";
-import qz from "../../assets/bell.svg";
+import assgn from "../../assets/quiz.jpeg";
+import qz from "../../assets/quiz.jpeg";
 import React, { Component, useState } from "react";
 import Image from "react-bootstrap/Image";
 import "./../College.css";
@@ -133,15 +133,17 @@ show: true,
       <div>
           <div className="row">
         <div className="col">
-          <span id="hd-colg-name">Quiz </span>
+        <div className="onetag" style={{  marginTop: "12px" }}>
+        <span >Current Time </span>
         </div>
-        <hr />
+        </div>
+     
       </div>
         <div className="row">
           <div className="col"></div>
           <div className="col"></div>
           <div className="col">
-            <div style={{ textAlign:"right", marginRight:"33em" }}>
+            <div style={{  marginRight:"33em" }}>
               
     
 

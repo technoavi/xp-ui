@@ -8,7 +8,7 @@ import add from "../../assets/add.svg";
 import DropUploader from './DropUploader'
 
 const componentConfig = {
-  iconFiletypes: [ '.pdf','.zip','.png'],
+  iconFiletypes: [ '.pdf','.docx','.xlsx'],
   showFiletypeIcon: true,
   postUrl: 'https://honeysuckle-snowstorm.glitch.me/uploadHandler'
 };
@@ -61,13 +61,13 @@ export default class AddAssignmentModal extends React.Component {
         <div className="modal" style={modalStyle}>
        <div>
          <div>
-           <span id="hd-colg-name">Upload Assignment</span>
+           <span id="hd-colg-name">Upload Quiz</span>
          
          </div>
-         <label id="ins-text">Add Assignment Title</label>
+         <label id="ins-text">Add Quiz Title</label>
          <div style={{    borderRadius: '22.5px',
     border: 'solid 1px #cbd4db'}}>
-           <input type="text" name='assgn' placeholder='Add title to Assignment' style={{
+           <input type="text" name='assgn' placeholder='Add title ' style={{
            marginTop: '6px',
            marginBottom: '6px',
     marginLeft: '12px',

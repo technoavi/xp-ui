@@ -20,8 +20,8 @@ export default class SyllabusTab extends Component {
     return (
       <div style={{ textAlign: "left", marginTop: "12px" }}>
       <div className="row">
-        <div className="col">
-        <span id="hd-colg-name">Current Time {dt.format("hh:mm a") }</span>
+        <div className="onetag" >
+        <span >Current Time {dt.format("hh:mm a") }</span>
         </div>
        
       
@@ -30,7 +30,7 @@ export default class SyllabusTab extends Component {
         
       </div>
 
-      <hr />
+   
       <div className="row">
      <Mycalendar/>
       </div>

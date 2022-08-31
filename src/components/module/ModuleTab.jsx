@@ -33,11 +33,11 @@ export default class ModuleTab extends Component {
       return <Redirect to="/login" />;
     }
     const courseData = {
-      modules: 42,
-      session: 43,
-      hours: 33,
-      course: "Data Science Engineeringsdfsdfsdfs",
-      faculty: "Avinash Srivastava",
+      modules: 4,
+      session: 5,
+      hours: 1.2,
+      course: "Science",
+      faculty: "Ankit",
     };
     return (
  <div>
@@ -53,17 +53,17 @@ export default class ModuleTab extends Component {
             }}
           />
           <div id="text-over">
-            <span style={{ fontFamily: "Poppins", fontSize: "32px" }}>
+            <span style={{ fontFamily: "monospace", fontSize: "32px" }}>
               {courseData.course}
             </span>
             <br />
 
-            <span style={{ fontFamily: "Poppins", fontSize: "20px" }}>
+            <span style={{ fontFamily: "monospace", fontSize: "20px" }}>
               {courseData.faculty}
             </span>
             <br />
             <div style={{ display: "flex", marginTop: "12px" }}>
-              <div style={{ marginRight: "12px" }}>
+              {/* <div style={{ marginRight: "12px" }}>
                 <Image
                   src={Module}
                   alt="Module"
@@ -71,8 +71,8 @@ export default class ModuleTab extends Component {
                 />
                 &nbsp;
                 <span id="crs-card-btm">{courseData.modules}</span>&nbsp;
-                <span id="crs-card-btm">Modules</span>
-              </div>
+                <span id="crs-card-btm">Grades</span>
+              </div> */}
               <div style={{ marginRight: "12px" }}>
                 <Image
                   src={Session}

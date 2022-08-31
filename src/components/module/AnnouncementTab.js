@@ -82,7 +82,9 @@ toggleModal = () => {
    
                   <div className="row">
     <div className="col">
-
+    <div className="onetag" style={{  marginTop: "12px" }}>
+        <span >Current Time </span>
+        </div>
     </div>
     <div className="col">
     </div>
