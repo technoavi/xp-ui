@@ -332,9 +332,14 @@ export default class SignUp extends Component {
                 <button id="Login-Btn" onClick={(e) => this.loginClicked(e)}>
                   <span id="LOG-IN">LOGIN</span>
                 </button>
+               
               </form>
+              <span id="Please-login-to-your" style={{ marginTop: "34px" }}>
+              Teacher => admin/123 && Student => user/123
+              </span>
             </div>
           </div>
+        
         </div>
 
         <Snackbar
