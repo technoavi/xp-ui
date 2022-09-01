@@ -17,9 +17,9 @@ export default class StuAssessmentsTab extends Component {
       assessments: [
         {
           id: 1,
-          title: "Pythagorus Theorem",
+          title:  "Animal Defence Mechanism",
           type: "Quiz 1",
-          due_date: "21/02/2022",
+          due_date: "21/09/2022",
           status: "0",
           marks: "10",
           description:
@@ -27,9 +27,9 @@ export default class StuAssessmentsTab extends Component {
         },
         {
           id: 2,
-          title: "Pythagorus Theorem",
+          title:  "Buoyancy ",
           type: "Quiz 2",
-          due_date: "21/04/2022",
+          due_date: "21/08/2022",
           status: "1",
           marks: "10",
           description:
@@ -37,9 +37,9 @@ export default class StuAssessmentsTab extends Component {
         },
         {
           id: 3,
-          title: "Pythagorus Theorem",
+          title: "Angular Momentum",
           type: "Quiz 3",
-          due_date: "21/03/2022",
+          due_date: "21/08/2022",
           status: "1",
           marks: "10",
           description:
@@ -47,31 +47,11 @@ export default class StuAssessmentsTab extends Component {
         },
         {
           id: 4,
-          title: "Pythagorus Theorem",
+          title: "Velocity and Friction",
           type: "Quiz 4",
-          due_date: "24/04/2022",
+          due_date: "24/09/2022",
           status: "0",
           marks: "4",
-          description:
-            "loerewrrrrrrrrrrrrrxfdsfdscsdvdsbsbdfbloerewrrrrrrrrrrrrrxfdsfdscsdvdsbsbdfbdbgsbgbgbbdsggggggggggggggggggggggggggggggggggggggggggdbgsbgbgbbdsgggggggggggggggggggggggggggggggggggggggggg",
-        },
-        {
-          id: 5,
-          title: "Pythagorus Theorem",
-          type: "Quiz ",
-          due_date: "25/05/2022",
-          status: "0",
-          marks: "5",
-          description:
-            "loerewrrrrrrrrrrrrrxfdsfdscsdvdsbsbdfbloerewrrrrrrrrrrrrrxfdsfdscsdvdsbsbdfbdbgsbgbgbbdsggggggggggggggggggggggggggggggggggggggggggdbgsbgbgbbdsgggggggggggggggggggggggggggggggggggggggggg",
-        },
-        {
-          id: 6,
-          title: "Pythagorus Theorem",
-          type: "Quiz 6",
-          due_date: "26/06/2022",
-          status: "1",
-          marks: "6",
           description:
             "loerewrrrrrrrrrrrrrxfdsfdscsdvdsbsbdfbloerewrrrrrrrrrrrrrxfdsfdscsdvdsbsbdfbdbgsbgbgbbdsggggggggggggggggggggggggggggggggggggggggggdbgsbgbgbbdsgggggggggggggggggggggggggggggggggggggggggg",
         }
@@ -99,7 +79,7 @@ export default class StuAssessmentsTab extends Component {
     return (
       <div>
          <div className="onetag" style={{  marginTop: "12px" }}>
-        <span >Current Tab </span>
+        <span >Play the quiz before attending the lecture </span>
         </div>
         <div className="row" style={{     display: "flex",
     flexWrap: "wrap"}}>

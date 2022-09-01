@@ -789,21 +789,20 @@ body {
 
 #ins-card-lb2 {
     font-family: Poppins;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: lighter;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.26;
     letter-spacing: 0.69px;
     text-align: center;
-    color: silver;
 }
 
 #i-tit {
-    width: 60%;
-    height: 16px;
+    width: 100%;
+    height: 25px;
     border-radius: 8.2px;
-    background-color: #2f368e;
+    background-color: rgb(19, 24, 58);
     margin-top: 12px;
     display: inline-flex;
     margin-bottom: 12px;
@@ -1427,17 +1426,17 @@ body {
 
 #div-overlay {
     width: 80%;
-    height: 17px;
+    text-align: center;
+    height: 25px;
     border-radius: 8.2px;
     background-color: #fe6900;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 12px;
     display: block;
 }
 
 #elevn-white {
     font-family: Poppins;
-    font-size: 11px;
+    font-size: 20px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1448,7 +1447,7 @@ body {
 
 #ninepx-font {
     font-family: Poppins;
-    font-size: 9px;
+    font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;

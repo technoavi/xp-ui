@@ -153,7 +153,7 @@ export default class SignUp extends Component {
       return <Redirect to="/tc" />;
     }
     else if (localStorage.getItem("stu")) {
-      return <Redirect to="/st" />;
+      return <Redirect to="/sd" />;
     }
     return (
 
@@ -186,7 +186,7 @@ export default class SignUp extends Component {
             </div>
           </div>
           <div className="col">
-            <div style={{ display:"flex",justifyContent:"right", marginTop: "-32em",  marginBottom: "-5em", marginRight:"7em" }}>
+            <div style={{ display:"flex",justifyContent:"right", marginTop: "-32em",  marginBottom: "-5em", marginRight:"20px" }}>
                <img style={{
                   width: "40%", 
                 }} src={logo} alt="logo" /></div>

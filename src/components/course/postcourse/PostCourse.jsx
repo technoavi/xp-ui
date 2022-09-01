@@ -10,11 +10,11 @@ export const PostCourse = (props) => {
             <div className="middleBlog">
                 <h2>{props.title}</h2>
             </div>
-            <div className="botBlog">
+            {/* <div className="botBlog">
                 <div className="botProfile">
               
-                </div>
-            </div>
+                </div> 
+            </div>*/}
         </div>
     )
 }

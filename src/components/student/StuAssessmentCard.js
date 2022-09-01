@@ -5,7 +5,7 @@ import assign from "../../assets/assignmnt.svg";
 import quiz from "../../assets/quiz.svg";
 import pin from "../../assets/pin.png";
 import submitted from "../../assets/submitted.svg";
-
+import qz from "../../assets/quiz.jpeg";
 import Image from "react-bootstrap/Image";
 
 export default class StuAssessmentCard extends Component {
@@ -34,14 +34,14 @@ export default class StuAssessmentCard extends Component {
     } = this.props.person;
     return (
       <div style={{ width: "380px", marginLeft: "8px", marginRight: "8px" }}>
-        <Card style={{ width: "380px", height: "290px" }}>
+        <Card style={{ width: "380px", height: "180px" }}>
           <div className="row">
             <div className="col-2">
               <Image
                 roundedcircle="true"
                 alt="Professor"
                 src={
-                  type.match(/quiz/i) ? quiz : assign
+                  qz
                 }
                 style={{
                   width: "30px",
@@ -61,7 +61,7 @@ export default class StuAssessmentCard extends Component {
                   wordBreak: "break-word",
                 }}
               >
-                <span id="ins-desc">{type}</span>
+               
               </div>
             </div>
             <div className="col" style={{padding: '0px'}}>
@@ -69,7 +69,7 @@ export default class StuAssessmentCard extends Component {
             <div style={{marginTop: '12px',  marginLeft: "12px"}}> 
               <Image src={submitted} alt="submitted" width="16" height="16"/> &nbsp;
               <span id="ninepx-font">SUBMITTED</span></div>
-             :  <div style={{marginTop: '12px',  marginLeft: "12px"}} > <span id="ninepx-font">Not Submitted</span></div>}
+             :  <div style={{marginTop: '12px',  marginLeft: "12px"}} > <span id="ninepx-font">NOT SUBMITTED</span></div>}
             </div>
           </div>
           <CardBody
@@ -77,17 +77,17 @@ export default class StuAssessmentCard extends Component {
               padding: "10px",
             }}
           >
-            <div style={{ textAlign: "left" }}>
+            <div style={{ textAlign: "right" , marginTop: "-4em"}}>
               <span id="ins-card-lb3">{title}</span>
 
               <br />
               <div id="trunc-txt">
-                <span>{description}</span>
+                <span></span>
                 <br />
               </div>
               <br />
-              <div style={{ textAlign: "left",marginTop: '-16px' }}>
-              <span id="cc-lbl">Your Points : </span><span id="#stu-name">
+              <div style={{ textAlign: "right",marginTop: '-26px' }}>
+              <span id="cc-lbl"> Points : </span><span id="#stu-name">
               { status.match(0) ? 
                  <span id="#stu-name">{marks}/10</span> : "--"}
                </span>
@@ -101,7 +101,8 @@ export default class StuAssessmentCard extends Component {
               { status==='0' ? 
             <div style={{}}> 
               <span id="ninepx-font" style={{color:'green', marginLeft:'10px'}}>Open</span></div>
-             :  <div style={{}} > <span id="ninepx-font"style={{color:'red', marginLeft:'10px'}}>closed</span></div>}
+             :  <div style={{}} > <span id="ninepx-font"style={{color:'red', marginLeft:'10px'}}>Closed</span></div>}
+             <div style={{textAlign:"right", marginTop:"-15px"}}>
                 <span id="cc-lbl">&nbsp;&nbsp;Due Date&nbsp;:&nbsp;</span>
                 <span
                   id="cc-lbl"
@@ -109,6 +110,7 @@ export default class StuAssessmentCard extends Component {
                 >
                   {this.getFormattedDate(due_date)}&nbsp;
                 </span>
+                </div>
               </div>
             </div>
             <div className="col" style={{
@@ -127,7 +129,7 @@ export default class StuAssessmentCard extends Component {
               >
                 <div id="elevn-white" style={{textAlign: 'center'}} >
                { status.match(1) ? 
-                  "TAKE TEST" : "Test Taken!!"}</div>
+                  "TAKE TEST" : "TEST TAKEN"}</div>
               </div>
             </div>
           </div>

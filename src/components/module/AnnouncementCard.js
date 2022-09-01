@@ -22,7 +22,7 @@ class AnnouncementCard extends Component {
     } = this.props.person;
     return (
       <div style={{ width: "300px", marginLeft: "8px", marginRight: "8px" }}>
-        <Card style={{ width: "290px", height: "290px" }}>
+        <Card style={{ width: "290px", height: "170px" }}>
         <div className="row">
     <div className="col-2">
     <Avatar
@@ -51,7 +51,7 @@ class AnnouncementCard extends Component {
           <CardBody style={{
                 padding: "10px",marginTop: "2em"
               }}>
-            <div>
+            <div style={{ textAlign: "center"}}>
             
               <span id="ins-card-lb3">{department}</span>
               <br />
@@ -62,15 +62,7 @@ class AnnouncementCard extends Component {
               {/* <span>{description}</span> */}
               <br />
             </div>
-            <a  href={faculty} download>
-              <span id="ins-card-lb2" style={{color: 'darkblue'}}>Download Report</span>
-              </a>
-              <Image
-                    src={pin}
-                    alt="pin"
-                    style={{ height: "35px", width: "35px", padding: "2PX", textAlign: 'right',
-                    marginTop: "2px" }}
-                  />
+           
               <br />
             </div>
 
@@ -79,11 +71,15 @@ class AnnouncementCard extends Component {
           </CardBody>
           <div className="row">
     
-    <div className="col">
-    <div  id="i-tit" style={{
-                marginBottom: "10px" ,float: 'right',marginRight: '10px'
+    <div className="col" style={{textAlign: "center",
+    justifyContent: "center",
+    display: "flex"}}>
+    <div  id="i-tit" style={{ width:"200px",
+                marginBottom: "10px" ,float: 'right',marginRight: '10px', marginTop:"-30px"
               }}>
-              <span id="c-tit-text">Posted On &nbsp;{date}</span>
+              <span id="c-tit-text"> <a  href={faculty} download>
+              <span id="ins-card-lb2" style={{color: 'white', }}>DOWNLOAD </span>
+              </a></span>
 
               </div>
     </div>

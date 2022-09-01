@@ -6,6 +6,7 @@ import Image from "react-bootstrap/Image";
 import Module from "../../assets/modules.svg";
 import Session from "../../assets/session.svg";
 import Hours from "../../assets/hours.svg";
+import logo from "../../assets/banner_logo.png";
 import { Tabs, TabList, TabPanel, Tab } from "react-re-super-tabs";
 import CustomTab from "./CustomTab";
 import StuSyllabusTab from "./StuSyllabusTab";
@@ -38,32 +39,30 @@ export default class StuModuleTab extends Component {
       session: 41,
       hours: 67,
       course: "Namaste!!",
-      faculty: "Avinash",
+      faculty: "Rahul",
     };
     return (
       <div>
       
-        <div style={{ position: "relative", textAlign: "left" }}>
-        
-          <Image
-            src={banner}
-            alt="banner"
-            height={160}
-            style={{
-              width: "100%",
-              zIndex: "1",
-              backgroundImage: "linear-gradient(to bottom, #626262, #001144)",
-            }}
-          />
+      <div style={{ position: "relative",  textAlign:"left" ,
+    height: "100px",
+
+    padding: "75px 0 0 942px",
+    backgroundColor: "#13183a",
+   
+    zIndex: "1"}}>
+         <div style={{   marginTop:"-10em", marginLeft:"-12px", textAlign:"right" }}>  <img style={{
+                  width: "40%", 
+                }} src={logo} alt="logo" /></div>
            
           <div id="text-over">
             <span style={{ fontFamily: "Poppins", fontSize: "20px" }}>
-              {courseData.course}
+              
             </span>
             <br />
 
             <span style={{ fontFamily: "Poppins", fontSize: "30px" }}>
-              {courseData.faculty}
+            
             </span>
             <br />
            
@@ -89,7 +88,7 @@ export default class StuModuleTab extends Component {
           <Tabs activeTab="stusession">
             <TabList>
               <Tab component={CustomTab} label="Calendar" id="stusyllabus" />
-              <Tab component={CustomTab} label="PreWatch" id="stusession" />
+              <Tab component={CustomTab} label="Pre-watch Content" id="stusession" />
               {/* <Tab component={CustomTab} label="Session" id="stuhotspot" /> */}
               <Tab
                 component={CustomTab}
@@ -98,7 +97,7 @@ export default class StuModuleTab extends Component {
               />
               <Tab
                 component={CustomTab}
-                label="PreRead Content"
+                label="Pre-read Content"
                 id="stuattachment"
               />
               <Tab

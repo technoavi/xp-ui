@@ -5,7 +5,7 @@ import ai from "../../assets/ai.jpg";
 import pin from "../../assets/pin.png";
 import Image from "react-bootstrap/Image";
 import play from "../../assets/playbtn.svg";
-import session_thumb from "../../assets/session_thumb.png";
+import session_thumb from "../../assets/courseplay.jpeg";
 import Typography from "@material-ui/core/Typography";
 
 export default class StuSessionCard extends Component {
@@ -20,6 +20,7 @@ export default class StuSessionCard extends Component {
       ses_num,
       title,
       faculty,
+      date,
       description,
     } = this.props.person;
     return (
@@ -57,7 +58,7 @@ export default class StuSessionCard extends Component {
                   id="cc-label"
                 >
               
-                  Session&nbsp;{ses_num}&nbsp;
+              
                 </span>
                 <div style={{ marginTop: "88px", marginLeft: "12px" }}>
                   <label
@@ -95,7 +96,18 @@ export default class StuSessionCard extends Component {
               }}
               id="trunc-txt"
             >
-              {description}
+              {/* {description} */}
+            </span>
+            <span
+              style={{
+                textAlign: "left",
+                marginTop: "6px",
+                display: "flex",
+                marginLeft: "12px",
+              }}
+              id="stu-name"
+            >
+              Due Date : {date}
             </span>
           </div>
         </Card>

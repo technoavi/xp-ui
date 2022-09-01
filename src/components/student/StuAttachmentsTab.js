@@ -73,7 +73,7 @@ export default class StuAttachmentsTab extends Component {
     return (
 		<div >
        <div className="onetag" style={{  marginTop: "12px" }}>
-        <span >Current Tab </span>
+        <span >Prepare for your upcoming class by going through this document </span>
         </div>
     <table id="students" style={{ textAlign: "left", marginTop: '10px' }}>
           <tbody>{this.renderTableData()}</tbody>

@@ -15,8 +15,8 @@ export default class AnnouncementTab extends Component {
         {
           id: 1,
           faculty: "Kuldeep Chavada",
-          title: "Physics",
-          department: "Computer Science",
+          title: "Class X",
+          department:  "Animal Defence Mechanism",
           date:"6/12/2022",
           description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
         
@@ -24,8 +24,8 @@ export default class AnnouncementTab extends Component {
         {
           id: 2,
           faculty: "Jay D Vala ",
-          title: "Chemistry",
-          department: "Bootstrap UI",
+          title: "Class X",
+          department: "Buoyancy ",
           date:"6/12/2022",
           description: "He has experience of more 20 years in Biotechnology & Micro cell technology."
       
@@ -33,8 +33,8 @@ export default class AnnouncementTab extends Component {
         {
           id: 3,
           faculty: "Martin harrison",
-          title: "Maths",
-          department: "UX Designing",
+          title: "Class X",
+          department: "Angular Momentum",
           date:"6/12/2022",
           description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
         
@@ -42,21 +42,13 @@ export default class AnnouncementTab extends Component {
         {
           id: 4,
           faculty: "Prasad K",
-          title: "Accounts",
-          department: "Cricket Academy",
-          date:"6/12/2022",
-          description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
-        
-        },
-        {
-          id: 5,
-          faculty: "Avinash Srivastava",
-          title: "Economics",
-          department: "AI and Product",
+          title: "Class X",
+          department: "Velocity and Friction",
           date:"6/12/2022",
           description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
         
         }
+       
       ]
     }
   }
@@ -83,7 +75,7 @@ toggleModal = () => {
                   <div className="row">
     <div className="col">
     <div className="onetag" style={{  marginTop: "12px" }}>
-        <span >Current Time </span>
+        <span >Download a report to plan your lecture for an improved student engagement in class</span>
         </div>
     </div>
     <div className="col">

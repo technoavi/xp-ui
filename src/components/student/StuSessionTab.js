@@ -20,74 +20,44 @@ export default class StuSessionTab extends Component {
         {
             id:1,
             ses_num: 1,
-            faculty: "Avinash Srivastava",
+            faculty: "Ankit",
             img_url:
               "https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg",
-            title: "Data Science Engineering",
+            title: "Animal Defence Mechanism",
             description: "Module 1Module 1Module 1,Module 1Module 1Module 1Module 1Module 1Module 1Module 1",
-          
+          date:"08/11/2022"
         }
         ,
         {
           id:2,
           ses_num: 2,
-          faculty: "Kuldeep Chavda",
+          faculty: "Ankit",
           img_url:
             "https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg",
-          title: "MAsters of Business Management",
+          title:  "Buoyancy ",
           description: "Module 1Module 1Module 1,Module 1Module 1Module 1Module 1Module 1Module 1Module 1",
-        
+          date:"05/07/2022"
       },
       {
         id:3,
         ses_num: 3,
-        faculty: "Jay D Vala",
+        faculty: "Ankit",
         img_url:
           "https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg",
-        title: "Data Analylist",
+        title: "Angular Momentum",
         description: "Module 1Module 1Module 1,Module 1Module 1Module 1Module 1Module 1Module 1Module 1",
-      
+        date:"21/09/2022"
     },
     {
       id:4,
       ses_num: 4,
-      faculty: "Avinash Srivastava",
+      faculty: "Ankit",
       img_url:
         "https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg",
-      title: "Finance Principles",
+      title: "Velocity and Friction",
       description: "Module 1Module 1Module 1,Module 1Module 1Module 1Module 1Module 1Module 1Module 1",
-    
-  },
-  {
-    id:5,
-    ses_num: 5,
-    faculty: "Avinash Srivastava",
-    img_url:
-      "https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg",
-    title: "Finance Principles",
-    description: "Module 1Module 1Module 1,Module 1Module 1Module 1Module 1Module 1Module 1Module 1",
-  
-},
-{
-  id:6,
-  ses_num: 6,
-  faculty: "Avinash Srivastava",
-  img_url:
-    "https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg",
-  title: "Finance Principles & Data Analylist",
-  description: "Module 1Module 1Module 1,Module 1Module 1Module 1Module 1Module 1Module 1Module 1",
-
-},
-{
-  id:7,
-  ses_num: 7,
-  faculty: "Avinash Srivastava",
-  img_url:
-    "https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg",
-  title: "Finance Principles",
-  description: "Module 1Module 1Module 1,Module 1Module 1Module 1Module 1Module 1Module 1Module 1",
-
-},
+      date:"11/11/2022"
+  }
       ],
     };
    
@@ -117,7 +87,7 @@ export default class StuSessionTab extends Component {
     return (
       <div className="card-container">
           <div className="onetag" style={{  marginTop: "12px" }}>
-        <span >Current Tab </span>
+        <span >Prepare for your upcoming class by watching a video</span>
         </div>
         <div onClick={this.onOpenModal} className="row" style={{   display: "flex",
     flexWrap: "wrap"}}>

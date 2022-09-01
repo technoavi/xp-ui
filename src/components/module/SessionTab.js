@@ -24,7 +24,7 @@ export default class SessionTab extends Component {
       students: [
         {
           id: 1,
-          name: "Angular Defence Mechanism",
+          name: "Animal Defence Mechanism",
           img_url: "https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg",
           email_id: "dfgg@email.com",
           department: "Understand the science behind defence mechanism of animals",
@@ -136,7 +136,7 @@ this.setState({
          <div className="row">
         <div className="col">
         <div className="onetag" >
-        <span >Current Time </span>
+        <span >Share a video with your students </span>
         </div>
         </div>
        

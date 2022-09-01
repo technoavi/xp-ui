@@ -36,7 +36,7 @@ export default function ReactPlayer(props) {
       center
     >
       <Player
-        src={"http://media.w3.org/2010/05/bunny/trailer.mp4"}
+        src={ "https://www.youtube.com/watch?v=Sv_DXzIOmx8"}
         startTime={900}
       >
         <BigPlayButton position="center" />

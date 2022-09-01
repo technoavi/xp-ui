@@ -10,6 +10,8 @@ import history from './history';
 import Mycalendar from "./components/calendar/Mycalendar";
 import StudentDashboard from "./components/studentdashboard/studentdashboard";
 import { AfterClass } from "./components/afterclass/AfterClass";
+import DuringCourse from "./components/duringclass/DuringCourse";
+import PostClassRoom from "./components/postclassroom/PostClassRoom";
 class Home extends Component {
   render() {
       
@@ -25,8 +27,10 @@ class Home extends Component {
     <Redirect to="/login" exact component={SignUp} />
     </Route>
     <Route path="/cc" exact component={Mycalendar} />
-    {/* <Route path="/sd" exact component={StudentDashboard} /> */}
+    <Route path="/sd" exact component={StudentDashboard} />
             <Route path="/login" exact component={SignUp} />
+            <Route path="/dc" exact component={DuringCourse} />
+            <Route path="/pc" exact component={PostClassRoom} />
             <Route path="/md" exact component={ModuleTab} />
             <Route path="/tc" exact component={Course} />
             <Route path="/st" exact component={StuModuleTab} />

@@ -21,7 +21,7 @@ export default class StuSyllabusTab extends Component {
         <div className="col">
    
           <div className="onetag" style={{  marginTop: "12px" }}>
-        <span >Current Time {dt.format("hh:mm a") }</span>
+        <span >Your upcoming classes are displayed here</span>
         </div>
    
         </div>

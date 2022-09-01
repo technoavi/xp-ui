@@ -21,7 +21,7 @@ export default class SyllabusTab extends Component {
       <div style={{ textAlign: "left", marginTop: "12px" }}>
       <div className="row">
         <div className="onetag" >
-        <span >Current Time {dt.format("hh:mm a") }</span>
+        <span >All your scheduled classes are displayed here </span>
         </div>
        
       

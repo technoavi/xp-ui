@@ -16,50 +16,42 @@ export default class AssessmentsTab extends Component {
     super(props); //since we are extending class Table so we have to use super in order to override Component class constructor
     this.state = {
  isOpen: false,
-
+ 
       show: true,
       //state is by default an object
       students: [
         {
           id: 1,
-          title: "Pythagorus Theorem",
+          title: "Animal Defence Mechanism",
           type: "Quiz 1",
-          due_date: "21/02/2020",
+          due_date: "21/09/2022",
           status: "open",
           marks: "10",
         },
         {
           id: 2,
-          title: "Euclids Theorem",
+          title: "Buoyancy ",
           type: "Quiz 1",
-          due_date: "21/02/2020",
+          due_date: "23/09/2022",
           status: "open",
           marks: "10",
         },
         {
           id: 3,
-          title: "Sigmoid Theorem",
+          title: "Angular Momentum",
           type: "Quiz 2",
-          due_date: "21/02/2020",
+          due_date: "21/09/2022",
           status: "open",
           marks: "10",
         },
         {
           id: 4,
-          title: "Jacobian Theorem",
+          title: "Velocity and Friction",
           type: "Quiz 2",
-          due_date: "21/02/2020",
+          due_date: "21/08/2022",
           status: "closed",
           marks: "10",
-        },
-        {
-          id: 5,
-          title: "Pythagorus Theorem",
-          type: "Quiz 3",
-          due_date: "21/02/2020",
-          status: "open",
-          marks: "10",
-        },
+        }
       ],
     };
   }
@@ -88,7 +80,7 @@ toggleModal = () => {
             <td style={{ verticalAlign: "top", width: "806px" }}>
               <div style={{ width: "606px", marginLeft: "12px" }}>
                 <span id="ass-title">
-                  {type.match(/quiz/i) ? "Quiz" : "Quiz"}
+                  {type.match(/quiz/i) ? "Class X" : "Quiz"}
                 </span>
                 <br />
                 <span id="stu-name">{title}</span>
@@ -134,7 +126,7 @@ show: true,
           <div className="row">
         <div className="col">
         <div className="onetag" style={{  marginTop: "12px" }}>
-        <span >Current Time </span>
+        <span >Share a quiz with your students to test their learning levels and generate meaningful insights </span>
         </div>
         </div>
      

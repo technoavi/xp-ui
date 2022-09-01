@@ -5,6 +5,7 @@ import { Tabs, TabList, TabPanel, Tab } from 'react-re-super-tabs'
 import CustomTab from './CustomTab'
 import SyllabusTab from './SyllabusTab'
 import SessionTab from './SessionTab'
+import logo from "../../assets/banner_logo.png";
 import HotspotTab from './HotspotTab'
 import AssesmentsTab from './AssesmentsTab'
 import AttachmentsTab from './AttachmentsTab'
@@ -37,21 +38,24 @@ export default class ModuleTab extends Component {
       session: 5,
       hours: 1.2,
       course: "Science",
-      faculty: "Ankit",
+      faculty: "Mr. Ankit Sinha",
     };
     return (
  <div>
- <div style={{ position: "relative", textAlign: "left" }}>
-          <Image
-            src={banner}
-            alt="banner"
-            height={160}
-            style={{
-              width: "100%",
-              zIndex: "1",
-              backgroundImage: "linear-gradient(to bottom, #626262, #001144)",
-            }}
-          />
+
+<div style={{ position: "relative",  textAlign:"left" ,
+    height: "100px",
+
+    padding: "75px 0 0 942px",
+    backgroundColor: "#13183a",
+   
+    zIndex: "1"}}>
+         <div style={{   marginTop:"-10em", marginLeft:"-12px", textAlign:"right" }}>  <img style={{
+                  width: "40%", 
+                }} src={logo} alt="logo" /></div>
+
+ 
+          
           <div id="text-over">
             <span style={{ fontFamily: "monospace", fontSize: "32px" }}>
               {courseData.course}
@@ -102,19 +106,19 @@ export default class ModuleTab extends Component {
           </div>
         </div>
      <div style={{backgroundColor: 'white',textAlign: 'left', marginLeft: '125px'}}>
-    <Tabs activeTab='session'>
+    <Tabs activeTab='syllabus'>
       <TabList>
       <Tab component={CustomTab} label='Calendar ' id='syllabus' />
-        <Tab component={CustomTab} label='PreWatch Content' id='session' />
-        <Tab component={CustomTab} label='Add Video' id='hotspot' />
+        {/* <Tab component={CustomTab} label='PreWatch Content' id='session' /> */}
+        <Tab component={CustomTab} label='Share Video' id='hotspot' />
         <Tab component={CustomTab} label='Quiz' id='assessment' />
-        <Tab component={CustomTab} label='PreRead' id='attachment' />
+        <Tab component={CustomTab} label='Share Doc' id='attachment' />
         <Tab component={CustomTab} label='Reports' id='announcement' />
 
       </TabList>
       <TabList>
       <TabPanel component={SyllabusTab} id='syllabus' />
-        <TabPanel component={SessionTab} id='session' />
+        {/* <TabPanel component={SessionTab} id='session' /> */}
         <TabPanel component={HotspotTab} id='hotspot' />
         <TabPanel component={AssesmentsTab} id='assessment' />
         <TabPanel component={AttachmentsTab} id='attachment' />

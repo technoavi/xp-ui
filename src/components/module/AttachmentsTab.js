@@ -14,15 +14,15 @@ export default class AttachmentsTab extends Component {
       people: [
         {
           id: 1,
-          url: "https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg",
-          title: "Reflection Notes   ",
-          date: "21/02/2020",
+          url: "https://www.boyertownasd.org/cms/lib/PA01916192/Centricity/Domain/604/Forces%20Balanced%20and%20Unbalanced.pptx",
+          title: "Force     ",
+          date: "21/09/2022",
         },
         {
           id: 2,
-          url: "https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg",
-          title: "Revision Notes",
-          date: "21/02/2020",
+          url: "https://tmurphy.physics.ucsd.edu/phys10/lectures/08_friction.ppt",
+          title: "Friction     ",
+          date: "21/09/2022",
         }
       ]
     }
@@ -90,7 +90,7 @@ toggleModal = () => {
         <div className="row">
         <div className="col">
         <div className="onetag" style={{  marginTop: "12px" }}>
-        <span >Current Time </span>
+        <span >Share an article or PPT with your students and let them come prepared to the class</span>
         </div>
         </div>
      

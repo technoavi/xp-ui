@@ -18,32 +18,36 @@ export default class HotspotTab extends Component {
               hostspotvideos: [
                 {
                   id: 1,
-                  url: "https://farm6.staticflickr.com/5812/23394215774_b76cd33a87_h_d.jpg",
-                  title: "Introduction",
-                  runtime: "5.0",
-                  duration: "5.7 min",
+                  name: "Animal Defence Mechanism",
+                  img_url: "https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg",
+                  email_id: "dfgg@email.com",
+                  department: "Understand the science behind defence mechanism of animals",
+                  course_enrolled: "23.09",
                 },
                 {
                   id: 2,
-                  url: "https://farm8.staticflickr.com/7356/27980899895_9b6c394fec_h_d.jpg",
-                  title: "Magnets & Lights ",
-                  runtime: "5.0",
-                  duration: "6.1 min",
+                  name: "Buoyancy ",
+                  img_url: "https://farm6.staticflickr.com/5812/23394215774_b76cd33a87_h_d.jpg",
+                  email_id: "dfgg@email.com",
+                  department: "See how buoyancy keeps a boat afloat",
+                  course_enrolled: "15.67",
                 },
                 {
                   id: 3,
-                  url: "https://farm6.staticflickr.com/5812/23394215774_b76cd33a87_h_d.jpg",
-                  title: "Reflections",
-                  runtime: "5.0",
-                  duration: "2.7 min",
+                  name: "Angular Momentum",
+                  img_url: "https://farm8.staticflickr.com/7455/27879053992_ef3f41c4a0_h_d.jpg",
+                  email_id: "dfgg@email.com",
+                  department: "Thinking of flip? See this first",
+                  course_enrolled: "12.34",
                 },
                 {
                   id: 4,
-                  url: "https://farm8.staticflickr.com/7356/27980899895_9b6c394fec_h_d.jpg",
-                  title: "Forces",
-                  runtime: "5.0",
-                  duration: "5.1 min",
-                },
+                  name: "Velocity and Friction",
+                  img_url: "https://farm8.staticflickr.com/7367/27980898905_72d106e501_h_d.jpg",
+                  email_id: "dfgg@email.com",
+                  department: "Ever fallen while skating? know why ",
+                  course_enrolled: "5.00",
+                }
               ],
              
          
@@ -55,10 +59,10 @@ export default class HotspotTab extends Component {
     return this.state.hostspotvideos.map((student, index) => {
       const {
         id,
-        url,
-        title,
-        runtime,
-        duration,
+        img_url,
+        name,
+        department,
+        course_enrolled,
       } = student; 
       return (
         <div>
@@ -67,7 +71,7 @@ export default class HotspotTab extends Component {
               <div id="sess-vid-div">
                 <div id="wrapper">
                   <Image
-                    src={url}
+                    src={img_url}
                     alt="mqmin"
                     style={{ width: 120, height: 90, opacity: 0.53 }}
                   />
@@ -82,18 +86,16 @@ export default class HotspotTab extends Component {
             </td>
             <td style={{ verticalAlign: "top", width: "806px" }}>
               <div style={{ width: "606px", marginLeft: "12px" }}>
-                <span id="mod-title">chapter {id}</span>
+                <span id="mod-title">Class X</span>
                 <br />
-                <span id="stu-name">{title}</span>
+                <span id="stu-name">{name}</span>
                 <br />
                 <span id="cc-lbl">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elitsasa.
+                {department}
                 </span>
                 <div id="stu-div" style={{ width: "130px" }}>
                 {" "}
-                <span id="stu-name"style={{ color: "red" }}>{duration}</span>
+                <span id="stu-name">{course_enrolled}</span>
                 
               </div>
               </div>
@@ -119,7 +121,7 @@ export default class HotspotTab extends Component {
           <div className="row">
         <div className="col">
         <div className="onetag" >
-        <span >Current Time </span>
+        <span >Share a video with your students and let them come prepared to the class</span>
         </div>
         </div>
      

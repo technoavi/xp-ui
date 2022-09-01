@@ -35,7 +35,7 @@ export default class Course extends Component {
 
         <div className="blogWrapper">
 
-          <div className="topInfo" style={{ marginTop: "20em" }}>
+          <div className="topInfo" style={{ marginTop: "22em" }}>
 
             {/* <button onClick={this.signOut} href="#" style={{width:" 70px", height:"30px"}}>
               Sign Out
@@ -63,16 +63,16 @@ export default class Course extends Component {
 
                 <div style={{
                    flexBasis: "50%",
-                   textAlign:"left", width: "10%",
+                   textAlign:"left", width: "10%",marginTop:"2em", marginLeft:"-20px"
                 }}> <img style={{
-                  width: "25%"
+                  width: "18%"
                 }} src={logo} alt="logo" />
                 </div>
               </div>
-              <div style={{display: "flex",
+              <div style={{display: "flex",marginTop:"-5em",
     justifyContent: "center"}}>
-                <p>
-                  You have better insights, your students are engaged, the Learning is maximized and get your superb results!! </p>
+                <h3>
+                  you have better insights, your students are more engaged and their learning is maximized.</h3>
 
               </div>
             </div>
@@ -90,24 +90,25 @@ export default class Course extends Component {
               <PostCourse
                 src={BlogPic1}
                 alt="alimento1"
-                title="Prepare Lecture"
+                title="Pre-Classroom"
 
 
               />
             </a>
-
+            <a href='/dc'>
             <PostCourse
               src={BlogPic2}
               alt="alimento2"
-              title="Engage Students"
+              title="Classroom"
 
 
             />
-            <a href='/af'>
+            </a>
+            <a href='/pc'>
               <PostCourse
                 src={BlogPic3}
                 alt="alimento3"
-                title="Share Notes"
+                title="Post-Classroom"
 
               />
             </a>
