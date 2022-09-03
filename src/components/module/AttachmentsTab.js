@@ -6,6 +6,9 @@ import share from "../../assets/share.svg"
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import "./../College.css";
 import AddAttachmentModal from './AddAttachmentModal'
+
+import SelelctCal from "../calendar/SelelctCal";
+import DatePicker from "react-datepicker";
 export default class AttachmentsTab extends Component {
   constructor() {
     super();
@@ -70,12 +73,18 @@ toggleModal = () => {
             <td>
               <div id="stu-div" style={{ width: "140px" }}>
                 {" "}
-                <span id="stu-name">{date}</span>
+                {/* <span id="stu-name">{date}</span> */}
               </div>
             </td>
             
             <td>
-            <Image width={30} height={30} src={share} alt="Card image cap" />
+            <div style={{textAlign: "right", width:"50px", marginLeft:"-150px"}}><span>Download Before </span></div>
+                
+                <div style={{textAlign: "left", width:"50px", marginLeft:"-80px", marginTop:"-40px"}}><SelelctCal className="input"/></div>
+             
+                <Image width={30} height={30} src={share} alt="Card image cap" />
+               
+  
             </td>
             
           </tr>

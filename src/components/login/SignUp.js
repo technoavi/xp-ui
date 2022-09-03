@@ -165,28 +165,38 @@ export default class SignUp extends Component {
             className="col"
             style={{ marginLeft: "200px", display: "grid" }}
           >
-            <div style={{ textAlign: "left" }}>
+            <div style={{ textAlign: "left" ,     fontSize: "23px"}}>
               <span id="phrase-txt">
-                Learn, Understand <br />
-                & Grow together to <br />
+              Learn, Understand Reading before the lectures has<br /> greater influence on learning and grades.  <br />
+                we help you plan it, analyze learning levels and <br />execute lectures accordingly. <br />
+                <div style={{ textAlign: "left", marginTop:"45px" }}>
                 <span style={{ color: "#fe5d00" }}>
-                  <u>improve</u>
+                  You need  <span style={{ color: "#0a2e78" , fontWeight:"600", textDecoration:"none"}}>Prior</span>   because you
                 </span>{" "}
-                your future.
+               </div>
               </span>
               <br />
               <br />
             </div>
-            <div style={{ textAlign: "left" }}>
-              <span id="phrase-txt-2">
-                A modern learning environment where <br />
-                students develop using innovative learning <br />
-                methods
-              </span>
+            <div style={{ textAlign: "left", display: "grid" ,marginTop:"-3em" }}>
+             
+              <span id="phrase-txt-mid">
+     <li id="phrase-txt-mid">face difficulty in meeting diverse needs of students </li>  <br />
+     <li id="phrase-txt-mid"> want insights to make more effective lessons  </li>  <br />
+     <li id="phrase-txt-mid">  have low participation from students during class </li>  <br />
+     <li id="phrase-txt-mid">  want to improve grades </li>  <br />
+       <span style={{ color: "rgb(209, 164, 0)" , fontWeight:"600", display:"block", marginTop:"2em"}}>
+                  From Rs.149 per student
+                </span>
+             </span>
+             
+             <span id="phrase-txt" style={{ color: "#fe5d00" , fontWeight:"600", display:"block", marginTop:"1em"}}>
+                  Sign Up Now!!
+                </span>
             </div>
           </div>
           <div className="col">
-            <div style={{ display:"flex",justifyContent:"right", marginTop: "-32em",  marginBottom: "-5em", marginRight:"20px" }}>
+            <div style={{ display:"flex",justifyContent:"right", marginTop: "-47em",  marginBottom: "-5em", marginRight:"20px" }}>
                <img style={{
                   width: "40%", 
                 }} src={logo} alt="logo" /></div>

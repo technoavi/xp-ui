@@ -5,6 +5,8 @@ import Image from "react-bootstrap/Image";
 import "./../College.css";
 import share from "../../assets/share.svg"
 
+import SelelctCal from "../calendar/SelelctCal";
+import DatePicker from "react-datepicker";
 import add_assgn from "../../assets/add_assignmnt.svg";
 import add_qz from "../../assets/add_quiz.svg";
 
@@ -105,7 +107,13 @@ toggleModal = () => {
               </div>
             </td>
             <td>
-            <Image width={30} height={30} src={share} alt="Card image cap" />
+            <div style={{textAlign: "right", width:"50px", marginLeft:"-150px"}}><span>Take Before </span></div>
+                
+                <div style={{textAlign: "left", width:"50px", marginLeft:"-80px", marginTop:"-40px"}}><SelelctCal className="input"/></div>
+             
+                <Image width={30} height={30} src={share} alt="Card image cap" />
+               
+  
             </td>
           </tr>
           <br />

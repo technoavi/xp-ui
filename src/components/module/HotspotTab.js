@@ -8,13 +8,18 @@ import ai from "../../assets/courses.jpg";
 import play from "../../assets/play.svg";
 import VideoInput from "../videoUpload/VideoInput";
 import share from "../../assets/share.svg"
+import SelelctCal from "../calendar/SelelctCal";
+import DatePicker from "react-datepicker";
 
+import "react-datepicker/dist/react-datepicker.css";
 export default class HotspotTab extends Component {
+  
+
   constructor(props) {
     super(props); //since we are extending class Table so we have to use super in order to override Component class constructor
     this.state = {
       //state is by default an object
-      
+      startDate: new Date(),
               hostspotvideos: [
                 {
                   id: 1,
@@ -54,6 +59,11 @@ export default class HotspotTab extends Component {
         
     };
   }
+  onChange= () => {
+    this.setState({
+      startDate: this.state.startDate
+    });
+  };
 
   renderTableData() {
     return this.state.hostspotvideos.map((student, index) => {
@@ -103,9 +113,17 @@ export default class HotspotTab extends Component {
 
             <td>
               <div id="stu-div" style={{ width: "130px" }}>
-               
-                <div style={{textAlign: "right"}}>
+            
+                <div style={{textAlign: "right", width:"50px"}}> 
+                <div style={{textAlign: "right", width:"50px", marginLeft:"-150px"}}><span>Watch Before </span></div>
+                
+                <div style={{textAlign: "left", width:"50px", marginLeft:"-80px", marginTop:"-40px"}}><SelelctCal className="input"/></div>
+             
                 <Image width={30} height={30} src={share} alt="Card image cap" />
+               
+  
+             
+              
                 </div>
               </div>
             </td>
@@ -115,7 +133,9 @@ export default class HotspotTab extends Component {
       );
     });
   }
+
   render() {
+    
     return (
       <div className="row" id="ses-div">
           <div className="row">
