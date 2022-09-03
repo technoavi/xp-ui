@@ -9,7 +9,7 @@ import pic from "../../assets/profile.jpg";
 import ai from "../../assets/courses.jpg";
 import play from "../../assets/lock.png";
 import StuSessionCard from "./StuSessionCard";
-import ReactPlayer from "../playercomp/ReactPlayer";
+import ReactPlayer from "../playercomp/MyReactPlayer";
 
 export default class StuSessionTab extends Component {
   constructor(props) {
@@ -89,11 +89,11 @@ export default class StuSessionTab extends Component {
           <div className="onetag" style={{  marginTop: "12px" }}>
         <span >Prepare for your upcoming class by watching a video</span>
         </div>
-        <div onClick={this.onOpenModal} className="row" style={{   display: "flex",
+        <div className="row" style={{   display: "flex",
     flexWrap: "wrap"}}>
           {peopleCards}
         </div>
-        <ReactPlayer open={this.state.open} toggleModal={this.onOpenModal} />
+        {/* <ReactPlayer open={this.state.open} toggleModal={this.onOpenModal} /> */}
       </div>
     );
   }

@@ -10,8 +10,14 @@ import VideoInput from "../videoUpload/VideoInput";
 import share from "../../assets/share.svg"
 import SelelctCal from "../calendar/SelelctCal";
 import DatePicker from "react-datepicker";
-
+import { useSnackbar } from "../util/MessageBar";
 import "react-datepicker/dist/react-datepicker.css";
+import MessageBar from "../util/MessageBar";
+import IconButton from "@material-ui/core/IconButton";
+import Snackbar from "@material-ui/core/Snackbar";
+import CloseIcon from "@material-ui/icons/Close";
+import Button from "@material-ui/core/Button";
+import AlertMassage from "../AlertMessage";
 export default class HotspotTab extends Component {
   
 
@@ -19,6 +25,7 @@ export default class HotspotTab extends Component {
     super(props); //since we are extending class Table so we have to use super in order to override Component class constructor
     this.state = {
       //state is by default an object
+      open:false,
       startDate: new Date(),
               hostspotvideos: [
                 {
@@ -64,7 +71,19 @@ export default class HotspotTab extends Component {
       startDate: this.state.startDate
     });
   };
-
+   handleToClose = (event, reason) => {
+    if ("clickaway" == reason) return;
+ 
+    this.setState({
+      open: !this.state.open
+    });
+  };
+  
+   handleClickEvent = () => {
+    this.setState({
+      open: !this.state.open
+    });
+  };
   renderTableData() {
     return this.state.hostspotvideos.map((student, index) => {
       const {
@@ -75,8 +94,9 @@ export default class HotspotTab extends Component {
         course_enrolled,
       } = student; 
       return (
-        <div>
+   
           <tr key={id}>
+                 <div>
             <td>
               <div id="sess-vid-div">
                 <div id="wrapper">
@@ -119,17 +139,38 @@ export default class HotspotTab extends Component {
                 
                 <div style={{textAlign: "left", width:"50px", marginLeft:"-80px", marginTop:"-40px"}}><SelelctCal className="input"/></div>
              
-                <Image width={30} height={30} src={share} alt="Card image cap" />
-               
-  
-             
+                <Image width={30} height={30} src={share} alt="Card image cap" onClick={this.handleClickEvent} />
+               {/*     <AlertMassage message={"hello"}  />
+             <MessageBar handleToClose={this.handleToClose} 	open={this.state.open}/> */}
+           <Snackbar
+		anchorOrigin={{
+		horizontal: "right",
+		vertical: "top",
+		}}
+		open={this.state.open}
+		autoHideDuration={5000}
+		message="Video Shared"
+		onClose={this.handleToClose}
+		action={
+		<React.Fragment>
+			<IconButton
+			size="small"
+			aria-label="close"
+			color="inherit"
+			onClick={this.handleToClose}
+			>
+			<CloseIcon fontSize="small" />
+			</IconButton>
+		</React.Fragment> 	}	/> 
+           
               
                 </div>
               </div>
             </td>
-          </tr>
+        
           <hr style={{ marginBottom: " 0.7rem", marginTop: "0.5rem" }} />
         </div>
+        </tr>
       );
     });
   }
@@ -161,6 +202,7 @@ export default class HotspotTab extends Component {
           >
             
             <VideoInput width={100} height={250} />
+            
           </div>
           <hr
             style={{ marginBottom: "1rem", marginTop: "0.5rem", width: "95%" }}

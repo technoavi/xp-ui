@@ -13,41 +13,41 @@ export default class AnnouncementTab extends Component {
       isOpen: false ,
       people: [
         {
-          id: 1,
-          faculty: "Kuldeep Chavada",
-          title: "Class X",
-          department:  "Animal Defence Mechanism",
-          date:"6/12/2022",
-          description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
-        
-        },
-        {
-          id: 2,
-          faculty: "Jay D Vala ",
-          title: "Class X",
-          department: "Buoyancy ",
-          date:"6/12/2022",
-          description: "He has experience of more 20 years in Biotechnology & Micro cell technology."
+        id: 1,
+        faculty: "https://www.newcastle.edu.au/__data/assets/pdf_file/0008/333773/LD-Report-Writing-LH.pdf",
+         title: "Class X",
+        department:  "Animal Defence Mechanism",
+        date:"6/12/2022",
+        description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
       
-        },
-        {
-          id: 3,
-          faculty: "Martin harrison",
-          title: "Class X",
-          department: "Angular Momentum",
-          date:"6/12/2022",
-          description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
-        
-        },
-        {
-          id: 4,
-          faculty: "Prasad K",
-          title: "Class X",
-          department: "Velocity and Friction",
-          date:"6/12/2022",
-          description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
-        
-        }
+      },
+      {
+        id: 2,
+        faculty: "https://www.newcastle.edu.au/__data/assets/pdf_file/0008/333773/LD-Report-Writing-LH.pdf",
+        title: "Class X",
+        department: "Buoyancy ",
+        date:"6/12/2022",
+        description: "He has experience of more 20 years in Biotechnology & Micro cell technology."
+    
+      },
+      {
+        id: 3,
+        faculty: "https://www.newcastle.edu.au/__data/assets/pdf_file/0008/333773/LD-Report-Writing-LH.pdf",
+        title: "Class X",
+        department: "Angular Momentum",
+        date:"6/12/2022",
+        description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
+      
+      },
+      {
+        id: 4,
+        faculty: "https://www.newcastle.edu.au/__data/assets/pdf_file/0008/333773/LD-Report-Writing-LH.pdf",
+        title: "Class X",
+        department: "Velocity and Friction",
+        date:"6/12/2022",
+        description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
+      
+      }
        
       ]
     }

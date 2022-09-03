@@ -21,7 +21,9 @@ export default SelectCal  => {
       <DatePicker
         selected={startDate}
         showTimeSelect
-        dateFormat="Pp"
+        showTime={{ use12Hours: true, format: "hh:mm A" }}
+
+        dateFormat="dd-MM-yyyy hh:mm aa"
         onChange={(date) => setStartDate(date)}
         calendarContainer={MyContainer}
       />

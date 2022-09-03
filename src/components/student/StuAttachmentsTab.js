@@ -12,15 +12,15 @@ export default class StuAttachmentsTab extends Component {
       people: [
         {
           id: 1,
-          url: "https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg",
-          title: "500 mg",
-          date: "21/02/2020",
+          url: "https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2019/08/08123637/jesc112.pdf",
+          title:"Electricity",
+          date: "21/09/2022",
         },
         {
           id: 2,
-          url: "https://farm9.staticflickr.com/8059/28286750501_dcc27b1332_h_d.jpg",
-          title: "500 mg",
-          date: "21/02/2020",
+          url: "https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2019/08/08123630/jesc113.pdf",
+          title: "Magnetic Effects Of Electric Current",
+          date: "29/02/2022",
         }
       ]
     }

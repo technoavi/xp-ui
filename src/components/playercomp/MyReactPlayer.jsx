@@ -36,7 +36,7 @@ export default function ReactPlayer(props) {
       center
     >
       <Player
-        src={ "https://www.youtube.com/watch?v=Sv_DXzIOmx8"}
+         src={"https://images.all-free-download.com/footage_preview/mp4/satellite_with_its_orbit_around_earth_6892430.mp4"}
         startTime={900}
       >
         <BigPlayButton position="center" />

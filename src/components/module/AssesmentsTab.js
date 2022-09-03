@@ -9,7 +9,9 @@ import SelelctCal from "../calendar/SelelctCal";
 import DatePicker from "react-datepicker";
 import add_assgn from "../../assets/add_assignmnt.svg";
 import add_qz from "../../assets/add_quiz.svg";
-
+import IconButton from "@material-ui/core/IconButton";
+import Snackbar from "@material-ui/core/Snackbar";
+import CloseIcon from "@material-ui/icons/Close";
 import AddAssignmentModal from './AddAssignmentModal'
 
 
@@ -18,7 +20,7 @@ export default class AssessmentsTab extends Component {
     super(props); //since we are extending class Table so we have to use super in order to override Component class constructor
     this.state = {
  isOpen: false,
- 
+ open:false,
       show: true,
       //state is by default an object
       students: [
@@ -58,6 +60,18 @@ export default class AssessmentsTab extends Component {
     };
   }
 
+  handleToClose = (event, reason) => {
+    if ("clickaway" == reason) return;
+ 
+    this.setState({
+      open: !this.state.open
+    });
+  };
+  handleClickEvent = () => {
+    this.setState({
+      open: !this.state.open
+    });
+  };
 
 toggleModal = () => {
   this.setState({
@@ -111,9 +125,28 @@ toggleModal = () => {
                 
                 <div style={{textAlign: "left", width:"50px", marginLeft:"-80px", marginTop:"-40px"}}><SelelctCal className="input"/></div>
              
-                <Image width={30} height={30} src={share} alt="Card image cap" />
+                <Image width={30} height={30} src={share} alt="Card image cap" onClick={this.handleClickEvent} />
                
-  
+                <Snackbar
+		anchorOrigin={{
+		horizontal: "right",
+		vertical: "top",
+		}}
+		open={this.state.open}
+		autoHideDuration={5000}
+		message="Quiz Shared"
+		onClose={this.handleToClose}
+		action={
+		<React.Fragment>
+			<IconButton
+			size="small"
+			aria-label="close"
+			color="inherit"
+			onClick={this.handleToClose}
+			>
+			<CloseIcon fontSize="small" />
+			</IconButton>
+		</React.Fragment> 	}	/> 
             </td>
           </tr>
           <br />
