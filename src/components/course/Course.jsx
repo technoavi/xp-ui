@@ -41,35 +41,27 @@ export default class Course extends Component {
               Sign Out
             </button> */}
             <div className="row">
-              <div className="col" style={{display: "flex",
+              <div className="col" style={{display: "flex",marginTop:"-2em",
     justifyContent: "center"}}>
                 <h2>Redefine How You Teach!</h2>
               </div>
-              <div className="col" style={{
-                display: "flex",
-                flexWrap: "wrap",
-            marginTop:"-5em",
-            marginBottom:"-5em"
-              }}>
+              
                 <div style={{
-                  flexGrow: "1",
-                  flexBasis: "50%",
-                  textAlign: "right",
-                  width: "10%",
-                  marginTop:"5em"
+                
+                  textAlign: "center",
+              
+                  marginTop:"1em"
                 }}>
-                  <h3>When you plan with </h3>
+                  <span><h3>When you plan with <h2>Prior</h2></h3></span>
                 </div>
 
                 <div style={{
                    flexBasis: "50%",
                    textAlign:"left", width: "10%",marginTop:"2em", marginLeft:"-20px"
-                }}> <img style={{
-                  width: "18%"
-                }} src={logo} alt="logo" />
-                </div>
+                }}> 
+          
               </div>
-              <div style={{display: "flex",marginTop:"-5em",
+              <div style={{display: "flex",marginTop:"-2em",
     justifyContent: "center"}}>
                 <h3>
                   you have better insights, your students are more engaged and their learning is maximized.</h3>

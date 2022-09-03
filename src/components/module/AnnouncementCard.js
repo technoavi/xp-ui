@@ -18,6 +18,7 @@ class AnnouncementCard extends Component {
       title,
       department,
       date,
+      status,
       description,
     } = this.props.person;
     return (
@@ -75,10 +76,10 @@ class AnnouncementCard extends Component {
     justifyContent: "center",
     display: "flex"}}>
     <div  id="i-tit" style={{ width:"200px",
-                marginBottom: "10px" ,float: 'right',marginRight: '10px', marginTop:"-30px"
+                marginBottom: "10px" ,float: 'right',marginRight: '10px', marginTop:"-30px",backgroundColor: status.match(/open/i) ? "rgb(155 160 195)" : "rgb(19, 24, 58);" 
               }}>
               <span id="c-tit-text"> <a  href={faculty} download>
-              <span id="ins-card-lb2" style={{color: 'white', }}>DOWNLOAD </span>
+              <span id="ins-card-lb2" style={{color: 'white'}}>DOWNLOAD </span>
               </a></span>
 
               </div>

@@ -161,20 +161,26 @@ export default class SignUp extends Component {
       <div id="bg">
 
         <div className="row" style={{ marginTop: "120px" }}>
-          <div
-            className="col"
-            style={{ marginLeft: "200px", display: "grid" ,marginTop: "-5em",}}
-          >
-               <img style={{
-                  width: "60%", 
-                }} src={page_content} alt="page_content" />
+       
+          <div className="col"  style={{ marginLeft: "2em", display: "inline-block" , marginLeft:"auto", marginRight:"auto",}}>
+             <img style={{ position: "absolute",
+        top: "0px",
+        left: "0px",
+                width: "60%",    marginTop: "5em"
+              }} src={page_content} alt="page_content" />
+               
+             <img style={{
+              position: "absolute",
+              top: "0px",
+              right: "0px",
+                width: "25%", 
+                marginRight: "8em"
+              }} src={logo} alt="logo" />
+        
           </div>
           <div className="col">
-            <div style={{ display:"flex",justifyContent:"right", marginTop: "-55em",  marginBottom: "-5em", marginRight:"20px" }}>
-               <img style={{
-                  width: "40%", 
-                }} src={logo} alt="logo" /></div>
-            <div id="login-Rectangle">
+         
+            <div id="login-Rectangle" style={{ marginTop: "18em"}}>
          
               <img
                 src={UserIcon}

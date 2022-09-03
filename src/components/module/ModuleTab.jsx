@@ -35,10 +35,10 @@ export default class ModuleTab extends Component {
     }
     const courseData = {
       modules: 4,
-      session: 5,
-      hours: 1.2,
+      session: 4,
+      hours: 0.5 ,
       course: "Science",
-      faculty: "Mr. Ankit Sinha",
+      faculty: "Mr. Abhishek Sinha",
     };
     return (
  <div>

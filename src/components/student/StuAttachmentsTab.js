@@ -12,15 +12,15 @@ export default class StuAttachmentsTab extends Component {
       people: [
         {
           id: 1,
-          url: "https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2019/08/08123637/jesc112.pdf",
+          url:"https://www.boyertownasd.org/cms/lib/PA01916192/Centricity/Domain/604/Forces%20Balanced%20and%20Unbalanced.pptx",
           title:"Electricity",
           date: "21/09/2022",
         },
         {
           id: 2,
-          url: "https://d2cyt36b7wnvt9.cloudfront.net/exams/wp-content/uploads/2019/08/08123630/jesc113.pdf",
+          url: "https://tmurphy.physics.ucsd.edu/phys10/lectures/08_friction.ppt",
           title: "Magnetic Effects Of Electric Current",
-          date: "29/02/2022",
+          date: "29/09/2022",
         }
       ]
     }
@@ -52,7 +52,7 @@ export default class StuAttachmentsTab extends Component {
             <td style={{ verticalAlign: "middle", width: "806px" }}>
               <div style={{ width: "606px", marginLeft: "12px" }}>
 <div>
-           <a  href={url} download><span id="blue-font">{title}</span></a>
+           <a  href={url}   target="_blank" download><span id="blue-font">{title}</span></a>
    </div>  
               </div>
             </td>

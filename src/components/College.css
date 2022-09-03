@@ -1444,13 +1444,27 @@ body {
     letter-spacing: 0.34px;
     color: #ffffff;
 }
+
+.react-datepicker {
+    font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 0.8rem;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #aeaeae;
+    border-radius: 0.3rem;
+    display: block;
+    width: 327px;
+    position: absolute;
+}
 input, input::-webkit-input-placeholder {
-    font-size: 20px;
+    font-size: 16px !important;
     width: 215px;
     height: 21px;
     line-height: 3;
-    text-align: left;
+    text-align: center !important;
     padding-left: 12px;
+    color: #fe5d00;
+   
 }
 .dtt{
     width: 50px;

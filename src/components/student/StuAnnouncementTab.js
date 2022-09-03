@@ -2,6 +2,7 @@ import React, { Component, useState } from "react";
 import { Container } from "@material-ui/core";
 import Image from "react-bootstrap/Image";
 import "./../College.css";
+import attach from "../../assets/attach.svg";
 import announcemnt from "../../assets/announcemnt.svg";
 import {  Col } from 'reactstrap';
 import AnnouncementCard from './AnnouncementCard'
@@ -13,83 +14,87 @@ export default class StuAnnouncementsTab extends Component {
       people: [
         {
           id: 1,
-          faculty: "https://www.newcastle.edu.au/__data/assets/pdf_file/0008/333773/LD-Report-Writing-LH.pdf",
-           title: "Class X",
-          department:  "Animal Defence Mechanism",
-          date:"6/12/2022",
-          description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
-        
+          url:"https://drive.google.com/file/d/1cHHCl3LNU1pIb6bnXy7T2K1esfgYgsmj/view",
+          title:"PERIODIC CLASSIFICATION OF LEMENTS Lecture 1/2",
+          date: "21/09/2022",
         },
         {
           id: 2,
-          faculty: "https://www.newcastle.edu.au/__data/assets/pdf_file/0008/333773/LD-Report-Writing-LH.pdf",
-          title: "Class X",
-          department: "Buoyancy ",
-          date:"6/12/2022",
-          description: "He has experience of more 20 years in Biotechnology & Micro cell technology."
-      
+          url: "https://drive.google.com/file/d/1cHHCl3LNU1pIb6bnXy7T2K1esfgYgsmj/view",
+          title:"PERIODIC CLASSIFICATION OF LEMENTS Lecture 2/2",
+          date: "29/09/2022",
         },
         {
           id: 3,
-          faculty: "https://www.newcastle.edu.au/__data/assets/pdf_file/0008/333773/LD-Report-Writing-LH.pdf",
-          title: "Class X",
-          department: "Angular Momentum",
-          date:"6/12/2022",
-          description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
-        
+          url:"https://drive.google.com/file/d/1cHHCl3LNU1pIb6bnXy7T2K1esfgYgsmj/view",
+          title:"Velocity",
+          date: "21/09/2022",
         },
         {
           id: 4,
-          faculty: "https://www.newcastle.edu.au/__data/assets/pdf_file/0008/333773/LD-Report-Writing-LH.pdf",
-          title: "Class X",
-          department: "Velocity and Friction",
-          date:"6/12/2022",
-          description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
-        
+          url: "https://drive.google.com/file/d/1cHHCl3LNU1pIb6bnXy7T2K1esfgYgsmj/view",
+          title: "Friction",
+          date: "29/09/2022",
         }
       ]
     }
   }
+  renderTableData() {
+    return this.state.people.map((student, index) => {
+      const {
+        id,
+        url,
+        title,
+        date,
+        
+      } = student; 
+      return (
+        <div>
+          <tr key={id}>
+            <td>
+              <div id="sess-vid-div">
+                <div >
+                <Image
+                    src={attach}
+                    alt="pause"
+                    style={{ width: 33, height: 33, margin: "6px 0 0 38px" }}
+                  />
+                 
+                </div>
+              </div>
+            </td>
+            <td style={{ verticalAlign: "middle", width: "806px" }}>
+              <div style={{ width: "606px", marginLeft: "12px" }}>
+<div>
+           <a  href={url}   target="_blank" download><span id="blue-font">{title}</span></a>
+   </div>  
+              </div>
+            </td>
 
-  removePerson(id) {
-    this.setState({ people: this.state.people.filter(person => person.id !== id)});
+            <td>
+              <div id="stu-div" style={{ width: "140px" }}>
+                {" "}
+                {/* <span id="stu-name">{date}</span> */}
+              </div>
+            </td>
+          </tr>
+          <hr style={{ marginBottom: " 0rem", marginTop: "5px" }} />
+        </div>
+      );
+    });
   }
   render() {
-    let peopleCards = this.state.people.map(person => {
-      return (
-        <Col md="12" id="cc">
-          <AnnouncementCard key={person.id} removePerson={this.removePerson.bind(this)} person={person} />
-        </Col>
-      )
-    })
-  return (
-    <div className="card-container">
-   
-                  <div className="row">
-    <div className="col">
-    <div className="onetag" style={{  marginTop: "12px" }}>
-        <span >Find a summarized lesson and key information from your instructor</span>
+    return (
+		<div >
+       <div className="onetag" style={{  marginTop: "12px" }}>
+        <span >Find a summarized lesson and key information from your instructor </span>
         </div>
-    </div>
-    <div className="col">
-    </div>
-	 <div className="col">
-   <Image
-                    src={announcemnt}
-                    alt="announcemnt"
-                    style={{ height: "35px", width: "35px", padding: "2PX",
-                    marginTop: "2px",  textAlign:'right' }}
-                  />
-    </div>
+    <table id="students" style={{ textAlign: "left", marginTop: '10px' }}>
+          <tbody>{this.renderTableData()}</tbody>
+        </table>
 </div>
-      
-      <div className="row" style={{marginLeft: '42px',display: "flex",
-    flexWrap: "wrap"}}>
-          {peopleCards}
-     
-       </div>
-    </div>
-  );
-}
+	
+	  );
+  }
 }
 	

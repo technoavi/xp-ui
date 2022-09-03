@@ -24,6 +24,7 @@ export default class StuSessionCard extends Component {
     let {
       id,
       img_url,
+      status,
       ses_num,
       title,
       faculty,
@@ -49,7 +50,7 @@ export default class StuSessionCard extends Component {
             />
             <div onClick={this.onOpenModal} className="row" style={{   display: "flex",
     flexWrap: "wrap"}}></div>
-     <ReactPlayer open={this.state.open} toggleModal={this.onOpenModal} />
+
             <div id="text-over" style={{ left: "12px" }}>
               <div style={{ marginLeft: "12px" }}>
                 <Image
@@ -59,22 +60,7 @@ export default class StuSessionCard extends Component {
                   id="img2"
                   onClick={this.onOpenModal} 
                 />
-                  <div onClick={this.onOpenModal} className="row" style={{   display: "flex",
-    flexWrap: "wrap"}}></div>
-     <ReactPlayer open={this.state.open} toggleModal={this.onOpenModal} />
-                <span
-                  style={{
-                    color: "white",
-                    float: "right",
-                    top: "-18px",
-                    right: "-20px",
-                    position: "absolute",
-                  }}
-                  id="cc-label"
-                >
-              
-              
-                </span>
+                
                 <div style={{ marginTop: "88px", marginLeft: "12px" }}>
                   <label
                     id="stu-name"
@@ -124,11 +110,18 @@ export default class StuSessionCard extends Component {
             >
               Due Date : {date}
             </span>
+          <div style={{
+            marginLeft: "12px",
+            color: "green",
+            fontWeight: "400"
+          }}>
+           {status.match(/open/i) ? "" : <span>Watched </span> }
+           </div>
           </div>
         </Card>
         <div onClick={this.onOpenModal} className="row" style={{   display: "flex",
     flexWrap: "wrap"}}></div>
-     <ReactPlayer open={this.state.open} toggleModal={this.onOpenModal} />
+     <ReactPlayer open={this.state.open} toggleModal={this.onOpenModal} url={img_url} />
       </div>
     );
   }

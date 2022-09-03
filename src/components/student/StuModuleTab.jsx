@@ -102,7 +102,7 @@ export default class StuModuleTab extends Component {
               />
               <Tab
                 component={CustomTab}
-                label="Reports"
+                label="Notes"
                 id="stuannouncement"
               />
             </TabList>

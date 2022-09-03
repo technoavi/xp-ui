@@ -78,7 +78,7 @@ toggleModal = () => {
             </td>
             
             <td>
-            <div style={{textAlign: "right", width:"50px", marginLeft:"-150px"}}><span>Download Before </span></div>
+            <div style={{textAlign: "right", width:"50px", marginLeft:"-150px"}}><span> Before </span></div>
                 
                 <div style={{textAlign: "left", width:"50px", marginLeft:"-80px", marginTop:"-40px"}}><SelelctCal className="input"/></div>
              
@@ -105,9 +105,7 @@ toggleModal = () => {
      
       </div>
     <div className="row">
-    <div className="col">
-1
-    </div>
+   
     
 	 <div className="col-3">
    <Image

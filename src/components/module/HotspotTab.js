@@ -135,7 +135,9 @@ export default class HotspotTab extends Component {
               <div id="stu-div" style={{ width: "130px" }}>
             
                 <div style={{textAlign: "right", width:"50px"}}> 
-                <div style={{textAlign: "right", width:"50px", marginLeft:"-150px"}}><span>Watch Before </span></div>
+                <div style={{textAlign: "right", width:"50px", marginLeft:"-150px"}}><span style={{
+             
+                }}> Before </span></div>
                 
                 <div style={{textAlign: "left", width:"50px", marginLeft:"-80px", marginTop:"-40px"}}><SelelctCal className="input"/></div>
              

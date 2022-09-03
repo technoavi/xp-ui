@@ -7,10 +7,10 @@ export default SelectCal  => {
     const [startDate, setStartDate] = useState(new Date());
     const MyContainer = ({ className, children }) => {
       return (
-        <div style={{ padding: "10px", background: "#216ba5", color: "#fff" , width:"10px", height:"40%"}}>
+        <div style={{  color: "#fff" , width:"10px", height:"30%"}}>
           <CalendarContainer className={className}>
-            <div style={{ background: "#f0f0f0" , textAlign:"center"}}>
-              Select a date for publish
+            <div style={{ background: "#f0f0f0" , textAlign:"center", color: "#ff0000"}}>
+            Students to consume this before
             </div>
             <div style={{ position: "relative" }}>{children}</div>
           </CalendarContainer>

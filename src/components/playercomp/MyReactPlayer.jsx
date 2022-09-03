@@ -15,7 +15,7 @@ import {
 import Modal from "react-responsive-modal";
 import "../../../node_modules/video-react/dist/video-react.css"
 export default function ReactPlayer(props) {
-  const { open, toggleModal } = props;
+  const { open, toggleModal,url } = props;
   return (
     <Modal
       open={open}
@@ -36,7 +36,7 @@ export default function ReactPlayer(props) {
       center
     >
       <Player
-         src={"https://images.all-free-download.com/footage_preview/mp4/satellite_with_its_orbit_around_earth_6892430.mp4"}
+         src={url}
         startTime={900}
       >
         <BigPlayButton position="center" />

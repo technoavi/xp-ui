@@ -18,8 +18,8 @@ export default class AnnouncementTab extends Component {
          title: "Class X",
         department:  "Animal Defence Mechanism",
         date:"6/12/2022",
-        description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
-      
+        description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava",
+        status: "open"
       },
       {
         id: 2,
@@ -27,7 +27,8 @@ export default class AnnouncementTab extends Component {
         title: "Class X",
         department: "Buoyancy ",
         date:"6/12/2022",
-        description: "He has experience of more 20 years in Biotechnology & Micro cell technology."
+        description: "He has experience of more 20 years in Biotechnology & Micro cell technology.",
+        status: "open"
     
       },
       {
@@ -36,8 +37,8 @@ export default class AnnouncementTab extends Component {
         title: "Class X",
         department: "Angular Momentum",
         date:"6/12/2022",
-        description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
-      
+        description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava",
+        status: "open"
       },
       {
         id: 4,
@@ -45,8 +46,8 @@ export default class AnnouncementTab extends Component {
         title: "Class X",
         department: "Velocity and Friction",
         date:"6/12/2022",
-        description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava"
-      
+        description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava",
+        status: "closed"
       }
        
       ]

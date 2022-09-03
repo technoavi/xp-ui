@@ -95,11 +95,13 @@ toggleModal = () => {
             </td>
             <td style={{ verticalAlign: "top", width: "806px" }}>
               <div style={{ width: "606px", marginLeft: "12px" }}>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfo-oKtsEiqA88EOkm-QSF5doQaCkC7Kvpfykddw7iOg7EvFg/viewform" target="_blank" >
                 <span id="ass-title">
                   {type.match(/quiz/i) ? "Class X" : "Quiz"}
                 </span>
                 <br />
                 <span id="stu-name">{title}</span>
+                </a>
                 <br />
                 <span
                   id="cc-lbl"
@@ -115,39 +117,43 @@ toggleModal = () => {
               </div>
             </td>
 
+           
             <td>
-              <div id="stu-div" style={{ width: "140px" }}>
-                {" "}
-              </div>
-            </td>
-            <td>
-            <div style={{textAlign: "right", width:"50px", marginLeft:"-150px"}}><span>Take Before </span></div>
-                
-                <div style={{textAlign: "left", width:"50px", marginLeft:"-80px", marginTop:"-40px"}}><SelelctCal className="input"/></div>
-             
-                <Image width={30} height={30} src={share} alt="Card image cap" onClick={this.handleClickEvent} />
-               
-                <Snackbar
-		anchorOrigin={{
-		horizontal: "right",
-		vertical: "top",
-		}}
-		open={this.state.open}
-		autoHideDuration={5000}
-		message="Quiz Shared"
-		onClose={this.handleToClose}
-		action={
-		<React.Fragment>
-			<IconButton
-			size="small"
-			aria-label="close"
-			color="inherit"
-			onClick={this.handleToClose}
-			>
-			<CloseIcon fontSize="small" />
-			</IconButton>
-		</React.Fragment> 	}	/> 
-            </td>
+            <div id="stu-div" style={{ width: "130px" }}>
+            
+            <div style={{textAlign: "right", width:"50px"}}> 
+            <div style={{textAlign: "right", width:"50px", marginLeft:"-150px"}}><span> Before </span></div>
+            
+            <div style={{textAlign: "left", width:"50px", marginLeft:"-80px", marginTop:"-40px"}}><SelelctCal className="input"/></div>
+         
+            <Image width={30} height={30} src={share} alt="Card image cap" onClick={this.handleClickEvent} />
+           {/*     <AlertMassage message={"hello"}  />
+         <MessageBar handleToClose={this.handleToClose} 	open={this.state.open}/> */}
+       <Snackbar
+anchorOrigin={{
+horizontal: "right",
+vertical: "top",
+}}
+open={this.state.open}
+autoHideDuration={5000}
+message="Quiz Shared"
+onClose={this.handleToClose}
+action={
+<React.Fragment>
+  <IconButton
+  size="small"
+  aria-label="close"
+  color="inherit"
+  onClick={this.handleToClose}
+  >
+  <CloseIcon fontSize="small" />
+  </IconButton>
+</React.Fragment> 	}	/> 
+       
+          
+            </div>
+          </div>
+        </td>
           </tr>
           <br />
           <div style={{marginLeft: "15px"}}>
