@@ -61,7 +61,7 @@ export default class Course extends Component {
                 }}> 
           
               </div>
-              <div style={{display: "flex",marginTop:"-2em",
+              <div style={{display: "flex",marginTop:"-2em",marginBottom:"2em",
     justifyContent: "center"}}>
                 <h3>
                   you have better insights, your students are more engaged and their learning is maximized.</h3>

@@ -170,7 +170,9 @@ input::-webkit-input-placeholder {
     line-height: 3;
     text-align: left;
     padding-left: 12px;
+    text-align: left !important;
 }
+
 
 #bg {
     background-image: url("../../assets/LOGIN_BG.svg");

@@ -75,12 +75,15 @@ class AnnouncementCard extends Component {
     <div className="col" style={{textAlign: "center",
     justifyContent: "center",
     display: "flex"}}>
-    <div  id="i-tit" style={{ width:"200px",
-                marginBottom: "10px" ,float: 'right',marginRight: '10px', marginTop:"-30px",backgroundColor: status.match(/open/i) ? "rgb(155 160 195)" : "rgb(19, 24, 58);" 
+    <div  id="i-tit" style={{ width:"200px", marginTop:"-30px",backgroundColor: status.match(/open/i) ? "rgb(155 160 195)" : "rgb(19, 24, 58);" 
               }}>
-              <span id="c-tit-text"> <a  href={faculty} download>
-              <span id="ins-card-lb2" style={{color: 'white'}}>DOWNLOAD </span>
-              </a></span>
+
+{ status.match(/open/i) ?
+            <span id="ins-card-lb2" style={{color: 'white', margin:"auto", display:"table" }}>DOWNLOAD </span>: <a id="ins-card-lb2" style={{color: 'white' ,margin:"auto", display:"table"}}
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfo-oKtsEiqA88EOkm-QSF5doQaCkC7Kvpfykddw7iOg7EvFg/viewform"  target="_blank" >  Download </a>}
+              {/* <span id="c-tit-text"> <a  href={faculty} download> */}
+              
+       
 
               </div>
     </div>

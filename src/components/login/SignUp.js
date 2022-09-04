@@ -212,8 +212,8 @@ export default class SignUp extends Component {
                         />
                       </div>
                       <div className="col">
-                        <FormControl style={{ width: "250px" }}>
-                          <InputLabel htmlFor="standard-adornment-text">
+                        <FormControl style={{ width: "250px", textAlign: "left !important" }}>
+                          <InputLabel htmlFor="standard-adornment-text" style={{  textAlign: "left !important" }}>
                             Username
                           </InputLabel>
                           <Input
