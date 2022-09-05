@@ -37,7 +37,7 @@ export default function ReactPlayer(props) {
     >
       <Player
          src={url}
-        startTime={900}
+        startTime={100}
       >
         <BigPlayButton position="center" />
         <LoadingSpinner />
