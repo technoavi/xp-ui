@@ -5,7 +5,7 @@ import ai from "../../assets/ai.jpg";
 import pin from "../../assets/pin.png";
 import Image from "react-bootstrap/Image";
 import DownloadLink from "react-download-link";
-
+import clrepo from "../../assets/pdf/report.pdf"
 class AnnouncementCard extends Component {
   constructor(props) {
     super(props);
@@ -80,7 +80,7 @@ class AnnouncementCard extends Component {
 
 { status.match(/open/i) ?
             <span id="ins-card-lb2" style={{color: 'white', margin:"auto", display:"table" }}>DOWNLOAD </span>: <a id="ins-card-lb2" style={{color: 'white' ,margin:"auto", display:"table"}}
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfo-oKtsEiqA88EOkm-QSF5doQaCkC7Kvpfykddw7iOg7EvFg/viewform"  target="_blank" >  Download </a>}
+            href={clrepo}  target="_blank" >  Download </a>}
               {/* <span id="c-tit-text"> <a  href={faculty} download> */}
               
        
