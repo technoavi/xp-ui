@@ -16,7 +16,7 @@ export default class AnnouncementTab extends Component {
         id: 1,
         faculty: "https://www.newcastle.edu.au/__data/assets/pdf_file/0008/333773/LD-Report-Writing-LH.pdf",
          title: "Class X",
-        department:  "Animal Defence Mechanism",
+         department: "Velocity and Friction",
         date:"6/12/2022",
         description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava",
         status: "open"
@@ -44,7 +44,8 @@ export default class AnnouncementTab extends Component {
         id: 4,
         faculty: "https://www.newcastle.edu.au/__data/assets/pdf_file/0008/333773/LD-Report-Writing-LH.pdf",
         title: "Class X",
-        department: "Velocity and Friction",
+        department:  "Animal Defence Mechanism",
+    
         date:"6/12/2022",
         description: "He has experience of more 20 years in Biotechnology & Micro cell technology. Avinash SrivastavHe has experience of more 20 years in Biotechnology & Micro cell technology.Avinash Srivastava",
         status: "closed"
