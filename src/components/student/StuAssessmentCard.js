@@ -129,7 +129,7 @@ export default class StuAssessmentCard extends Component {
               >
                 <div id="elevn-white" style={{textAlign: 'center'}} >
                { status.match(1) ?
-                "TEST TAKEN" : <a href="https://docs.google.com/forms/d/e/1FAIpQLSfo-oKtsEiqA88EOkm-QSF5doQaCkC7Kvpfykddw7iOg7EvFg/viewform"  target="_blank" >  TAKE TEST </a>}</div>
+               "TAKE TEST"  : <a href="https://docs.google.com/forms/d/e/1FAIpQLSfo-oKtsEiqA88EOkm-QSF5doQaCkC7Kvpfykddw7iOg7EvFg/viewform"  target="_blank" >  TEST TAKEN </a>}</div>
               </div>
             </div>
           </div>
