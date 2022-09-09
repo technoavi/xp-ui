@@ -19,8 +19,8 @@ export default class StuAssessmentsTab extends Component {
           id: 1,
           title:  "Animal Defence Mechanism",
           type: "Quiz 1",
-          due_date: "21/09/2022",
-          status: "0",
+          due_date: "27/09/2022",
+          status: "1",
           marks: "10",
           description:
             "loerewrrrrrrrrrrrrrxfdsfdscsdvdsbsbdfbloerewrrrrrrrrrrrrrxfdsfdscsdvdsbsbdfbdbgsbgbgbbdsggggggggggggggggggggggggggggggggggggggggggdbgsbgbgbbdsgggggggggggggggggggggggggggggggggggggggggg",
@@ -29,7 +29,7 @@ export default class StuAssessmentsTab extends Component {
           id: 2,
           title:  "Buoyancy ",
           type: "Quiz 2",
-          due_date: "21/08/2022",
+          due_date: "28/09/2022",
           status: "1",
           marks: "10",
           description:
@@ -39,7 +39,7 @@ export default class StuAssessmentsTab extends Component {
           id: 3,
           title: "Angular Momentum",
           type: "Quiz 3",
-          due_date: "21/08/2022",
+          due_date: "21/09/2022",
           status: "1",
           marks: "10",
           description:
@@ -49,8 +49,8 @@ export default class StuAssessmentsTab extends Component {
           id: 4,
           title: "Velocity and Friction",
           type: "Quiz 4",
-          due_date: "24/09/2022",
-          status: "0",
+          due_date: "25/09/2022",
+          status: "1",
           marks: "4",
           description:
             "loerewrrrrrrrrrrrrrxfdsfdscsdvdsbsbdfbloerewrrrrrrrrrrrrrxfdsfdscsdvdsbsbdfbdbgsbgbgbbdsggggggggggggggggggggggggggggggggggggggggggdbgsbgbgbbdsgggggggggggggggggggggggggggggggggggggggggg",

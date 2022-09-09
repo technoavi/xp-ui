@@ -98,7 +98,7 @@ export default class StuAssessmentCard extends Component {
             <div className="col">
               <div>
             
-              { status==='0' ? 
+              { status==='1' ? 
             <div style={{}}> 
               <span id="ninepx-font" style={{color:'green', marginLeft:'10px'}}>Open</span></div>
              :  <div style={{}} > <span id="ninepx-font"style={{color:'red', marginLeft:'10px'}}>Closed</span></div>}
@@ -128,8 +128,8 @@ export default class StuAssessmentCard extends Component {
                 }}
               >
                 <div id="elevn-white" style={{textAlign: 'center'}} >
-               { status.match(1) ?
-               "TAKE TEST"  : <a href="https://docs.google.com/forms/d/e/1FAIpQLSfo-oKtsEiqA88EOkm-QSF5doQaCkC7Kvpfykddw7iOg7EvFg/viewform"  target="_blank" >  TEST TAKEN </a>}</div>
+               { status.match(0) ?
+               "TAKE TEST"  : <a href="https://docs.google.com/forms/d/e/1FAIpQLSfo-oKtsEiqA88EOkm-QSF5doQaCkC7Kvpfykddw7iOg7EvFg/viewform"  target="_blank" >  TEST TAKE </a>}</div>
               </div>
             </div>
           </div>
